@@ -4,60 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
-  <link rel="stylesheet" href="./css/choices.min.css">
-  <link rel="stylesheet" href="./css/swiper.css">
-  <script src="js/swiper/swiper.js"></script>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="/css/choices.min.css">
+  <link rel="stylesheet" href="/css/swiper.css">
+  <script src="/js/choices.min.js"></script>
+  <script src="/js/swiper/swiper.js"></script>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/gallery-slider.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <header class="header">
-    <div class="header__container">
+    <div class="first-header__container">
       <a href="#">
         <img src="./img/header/logo.png" alt="logo">
       </a>
-      <nav class="nav">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="#" class="nav__link">О нас</a>
+      <nav class="first-nav">
+        <ul class="first-nav__items">
+          <li class="first-nav__item">
+            <a href="#about" class="first-nav__link">О нас</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Галерея</a>
+          <li class="first-nav__item">
+            <a href="#gallery" class="first-nav__link">Галерея</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Каталог</a>
+          <li class="first-nav__item">
+            <a href="#" class="first-nav__link">Каталог</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">События</a>
+          <li class="first-nav__item">
+            <a href="#" class="first-nav__link">События</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Издания</a>
+          <li class="first-nav__item">
+            <a href="#" class="first-nav__link">Издания</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Проекты</a>
+          <li class="first-nav__item">
+            <a href="#" class="first-nav__link">Проекты</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Контакты</a>
+          <li class="first-nav__item">
+            <a href="#" class="first-nav__link">Контакты</a>
           </li>
         </ul>
       </nav>
-      <a href="#" class="header__link">
+      <a href="#" class="first-header__link">
         <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="black"/>
           <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="currentColor"/>
         </svg>          
         Войти</a>
     </div>
-    <div class="header2__container">
-      <nav class="nav2">
-        <ul class="nav2__items">
-          <li class="nav2__item">Реализм</li>
-          <li class="nav2__item">Импрессионизм</li>
-          <li class="nav2__item">Постимпрессионизм</li>
-          <li class="nav2__item">Авангард</li>
-          <li class="nav2__item">Футуризм</li>
+    <div class="second-header__container">
+      <nav class="second-nav">
+        <ul class="second-nav__items">
+          <li class="second-nav__item">Реализм</li>
+          <li class="second-nav__item">Импрессионизм</li>
+          <li class="second-nav__item">Постимпрессионизм</li>
+          <li class="second-nav__item">Авангард</li>
+          <li class="second-nav__item">Футуризм</li>
         </ul>
       </nav>
-      <input type="text">
+      <label class="search-label" for="search">
+        <a href="#" class="search-label__icon" aria-label="Кнопка поиска" tabindex="6">
+          <svg width="20" height="20" viewBox="0 0 30 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2725 5.32763 13.5104C5.32763 7.74821 10.0376 2.84674 16.1246 2.84674C22.2115 2.84674 26.9215 7.74821 26.9215 13.5104C26.9215 19.2725 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14867 8.76285 0.180832 16.1246 0.180832C23.4863 0.180832 29.4541 6.14867 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="currentColor"/>
+          </svg>
+            
+        </a>
+        <input class="search" type="search" placeholder="Поиск по сайту">
+      </label>
     </div>
     <div class="hero">
       <div class="hero__discription">
@@ -71,33 +83,21 @@
           Подписаться на рассылку
         </button>
       </div>
-      <div class="swiper-container">
+      <div class="hero-slider swiper-container">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+        <div class="hero-slider__wrapper swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide" style="background-image: url(img/1.jpg)"></div>
-            <div class="swiper-slide" style="background-image: url(img/2.jpg)"></div>
-            <div class="swiper-slide" style="background-image: url(img/3.jpg)"></div>
+            <div class="hero-slider__slide swiper-slide" style="background-image: url(/img/hero/1.jpg)"></div>
+            <div class="hero-slider__slide swiper-slide" style="background-image: url(/img/hero/2.jpg)"></div>
+            <div class="hero-slider__slide swiper-slide" style="background-image: url(/img/hero/3.jpg)"></div>
         </div>
       </div>
     </div>
-    <script>
-      var mySwiper = new Swiper('.swiper-container', {
-        autoplay: {
-        delay: 5000,
-        },
-      loop: true,
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   clickable: {
-      //   }
-      // }
-    })
-    </script>
+    <script src="/js/hero-slider.js"></script>
   </header>
   
   <main>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__container">
         <h2 class="about__title title">
           О нас
@@ -108,7 +108,7 @@
       </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="gallery__container">
         <div class="gallery__filter">
           <h2 class="gallery__title title">Галерея</h2>
@@ -119,73 +119,172 @@
               <option value="">Направление</option>
               <option value="">Техника</option>
             </select>
-            <script src="js/choices.min.js"></script>
-            <script>
-              const element = document.querySelector('#selectCustom');
-              const choices = new Choices(element, {
-                  itemSelectText: '',
-                  placeholder: false,
-                  placeholderValue: true,
-                  searchEnabled: false,
-                  
-                });
-            </script>
+            <script src="js/gallery-select.js"></script>
           </div>
           <p class="gallary__text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
-            <a class="gallay__link" href="#">авторизуйтесь,</a>  
+            <a class="gallary__link" href="#">авторизуйтесь,</a>  
             либо воспользуйтесь лицензией. </p>
         </div>
-        <!-- <div class="gallary-swiper-container">
-          <div class="gallary-swiper-wrapper">
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/1.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/2.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/3.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/4.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/5.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/6.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/7.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/8.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/9.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/10.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/11.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/12.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/13.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/14.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/15.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/16.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/17.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/18.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/19.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/20.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/21.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/22.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/23.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/24.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/25.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/26.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/27.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/28.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/29.jpg);"></div>
-            <div class="gallary-swiper-slide" style="background-image: url(img/gallary/30.jpg);"></div>
+        <div class="image-slider swiper-container">
+          <div class="image-slider__wrapper swiper-wrapper">
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/1.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/2.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/3.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/4.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/5.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/6.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/7.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/8.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/9.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/10.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/11.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/12.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/13.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/14.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/15.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/16.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/17.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/18.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/19.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/20.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/21.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/31.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/23.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/24.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/25.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/26.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/27.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/28.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/29.jpg" alt="Картинка">
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="/img/gallary/30.jpg" alt="Картинка">
+              </div>
+            </div>
           </div>
-          <div class="gallary-swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <script>
-          var mySwiper = new Swiper('.gallary-swiper-container', {
-            slidesPerView: 3,
-            slidesPerColumn: 2,
-            spaceBetween: 50,
-            pagination: {
-              el: '.gallary-swiper-pagination',
-              clickable: true,
-            },
-            })
-        </script> -->
       </div>
+      <script src="/js/gallery-slider.js"></script>
     </section>
-
   </main> 
-
 </body>
-
 </html>
