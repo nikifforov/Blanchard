@@ -54,16 +54,20 @@
 .dropdown__items:not(:last-child) {
   margin-bottom: 20px;
 }
-
-.dropdown__items:hover {
+/* 
+/* .dropdown__items:hover {
   cursor: pointer;
   outline: 2px solid var(--hover-color);
   transition: .3s;
-}
+} */ */
 
 .dropdown__items:active {
   outline: 2px solid #D1A9F0;
   background-color: rgba(194, 131, 243, 0.4);
+}
+
+.dropdown__items:focus {
+  border: 2px solid #D1A9F0;
 }
 
 

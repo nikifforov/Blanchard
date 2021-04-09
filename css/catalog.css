@@ -49,6 +49,7 @@
   border: none;
   border-radius: 100%;
   outline: none;
+  transition: .3s;
 }
 
 .catalog-language__item:hover,
@@ -192,6 +193,7 @@
 .catalog-painters__link {
   color: #333333;
   width: auto;
+  transition: .3s;
 }
 
 .catalog-painters__link:hover {

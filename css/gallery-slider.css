@@ -75,6 +75,7 @@
   background: #666666;
   border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 50px;
+  transition: .3s;
 }
 
 .swiper-button-prev:hover,

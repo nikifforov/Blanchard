@@ -25,18 +25,22 @@
 .projects-discription__link {
   font-weight: 600;
   color: var(--hover-color);
+  transition: .3s;
 }
 
 .projects-discription__link:focus {
   outline: 2px solid var(--active-focus-color);
+  transition: .3s;
 }
 
 .projects-discription__link:hover {
   text-decoration: underline;
+  transition: .3s;
 }
 
 .projects-discription__link:active {
   color: var(--active-focus-color);
+  transition: .3s;
 }
 
 .projects-partners__title {
@@ -62,6 +66,7 @@
   margin-right: 50px;
   padding: 44px;
   border: 1px solid #CACACA;;
+  transition: .3s;
 }
 
 .projects-slide {
