@@ -1,0 +1,125 @@
+
+
+.contacts-container {
+  display: flex;
+}
+
+.contacts-title {
+  padding-left: 160px;
+  margin: 0;
+  margin-bottom: 18px;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--title-color);
+}
+
+
+
+.contacts-main {
+  max-width: 683px;
+  padding-top: 124px;
+  padding-right: 122px;
+  padding-bottom: 120px;
+  padding-left: 160px;
+  border: 1px solid #CACACA;
+}
+
+.contacts-main__title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--title-color);
+}
+
+.contacts-main__address {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 16px;
+}
+
+.contacts-form__label {
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--title-color);
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+
+.contacts-form__input {
+  width: 400px;
+  padding: 4px 97px 4px 24px;
+  margin-bottom: 23px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999999;
+  outline: none;
+  border: 1px solid #333333;
+  border-radius: 100px
+}
+
+.contacts-form__btn {
+  position: relative;
+  width: 157px;
+  height: 59px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #9D5CD0;
+  background: #FFFFFF;
+  outline: none;
+  border: 2px solid #9D5CD0;
+  border-radius: 100px;
+}
+
+.contacts-form__btn:focus::after {
+  content: '';
+  position: absolute;
+  width: 167px;
+  height: 69px;
+  top: 0px;
+  left: 0px;
+  margin-top: -9px;
+  margin-left: -9px;
+  border: 2px solid #C283F3;
+  border-radius: 100px;
+}
+
+.contacts-form__btn:hover {
+  color: #FFFFFF;
+  background: var(--hover-color);
+}
+
+.contacts-form__btn:active {
+  border: 3px solid #D1A9F0;
+  background: var( --active-focus-color);
+}
+
+.contacts-social__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--title-color);
+}
+
+.contacts-social__link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.contacts-map {
+  width: 1720px;
+  height: 700px;
+}
+
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}

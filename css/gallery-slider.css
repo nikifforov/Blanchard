@@ -1,47 +1,112 @@
-
 .image-slider.swiper-container {
-  width: 1150px;
-  height: 800px;
-  margin-left: 50px;
-  margin-right: 0px;
+  max-height: 835px;
 }
 
 .image-slider__wrapper {
-  margin-top: 80px;
+  margin-top: 85px;
 }
 
 .image-slider .swiper-button-prev,
 .image-slider .swiper-button-next {
-  top: 40px;
+  top: 46px;
 }
 
 .image-slider .swiper-button-prev::after,
 .image-slider .swiper-button-next::after {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 10px;
 }
+
+.image-slider__slide.swiper-slide {
+  max-height: 350px;
+}
+
+
+.image-slider__slide:focus::after {
+  content: '';
+  position: absolute;
+  width: 344px;
+  height: 344px;
+  top: 3px;
+  left: 3px;
+  outline: 3px solid var(--active-focus-color);
+}
+
+
+.image-slider__slide:hover::before {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 25px;
+  left: 25px;
+  background-image: url(/img/gallary/plus.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.image-slider__slide:active::after {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 0;
+  left: 0;
+  background-color: rgba(194, 131, 243, 0.4);
+  cursor: pointer;
+}
+
+
 
 .swiper-button-prev, 
 .swiper-container-rtl .swiper-button-next {
-  left: 0;
+  left: 2px;
 }
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  left: 99px;
+  left: 102px;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 31px;
+  height: 31px;
+  background: #666666;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 50px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: var(--hover-color);
+  transition: .3s;
+} 
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  background: var(--active-focus-color);
+  border: 2px solid rgba(209, 169, 240, 1);
+} 
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  outline: none;
+  border: 2px solid var(--active-focus-color);
+} 
 
 .image-slider .swiper-pagination {
   width: 51px;
+  max-width: 100px;
   height: 20px;
   top: 31px;
-  left: 36px;
+  left: 43px;
 }
 
-.image-slider .swiper-pagination-bullet {
+.image-slider.swiper-pagination-bullet {
   width: 20px;
   height: 20px;
-  font-size: 20px;
+  font-size: 16px;
   background-color: #fff;
 }
 
@@ -49,13 +114,3 @@
   font-size: 16px;
   color: #fff;
 }
-
-.image-slider__wrapper .swiper-wrapper {
-  width: 1150px;
-}
-
-.image-slider__slide.swiper-slide {
-  margin-top: 0;
-  height: 350px;
-}
-

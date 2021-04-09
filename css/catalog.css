@@ -1,0 +1,256 @@
+
+.catalog {
+  padding-top: 82px;
+  min-height: 1390px;
+  margin-bottom: 85px;
+}
+
+.ui-tabs {
+  padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav {
+  padding: 0;
+}
+
+.ui-tabs .ui-tabs-panel {
+  padding: 0;
+}
+
+.catalog-language {
+ max-width: 1080px;
+ margin-bottom: 40px;
+}
+
+.catalog-language__choice {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.catalog-title {
+  margin-right: 41px;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  padding: 0;
+  height: 46px;
+}
+
+.catalog-language__icon {
+  border-radius: 100%;
+}
+
+.catalog-language__item,
+.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab {
+  margin: 0;
+  margin-right: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  outline: none;
+}
+
+.catalog-language__item:hover,
+.ui-tabs-tab.ui-corner-top
+.ui-state-default
+.ui-tab 
+.ui-state-hover {
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+  border-radius: 29px;
+  transition: .3s;
+}
+
+.ui-tabs-anchor:active::after {
+  content: '';
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: -2px;
+  left: -2px;
+  filter: none;
+  border: 2px solid var(--active-focus-color);
+  border-radius: 50px;
+}
+
+.ui-tabs-active::after {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  margin-top: -12px;
+  margin-left: -58px;
+  border: 2px solid  var(--active-focus-color);
+  border-radius: 100px;
+}
+
+.catalog-language__description {
+  font-size: 16px;
+  line-height: 33px;
+  color: #333333;
+}
+
+.catalog-painters__container {
+  display: flex;
+}
+
+.catalog-painters {
+  max-width: 750px;
+  margin-right: 50px;
+}
+
+.catalog-painters__img {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.catalog-painters__name {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+}
+
+.catalog-painters__year {
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.catalog-painters__icon {
+  color: #ECECEC;
+}
+
+.catalog-painters__description {
+  margin: 0;
+  margin-top: 9px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.catalog-painters__choice {
+  width: 800px;
+}
+
+.catalog-painters__header 
+.ui-state-default, 
+.ui-widget-content 
+.ui-state-default  {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.catalog-painters__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.catalog-painters__years {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.ui-accordion .ui-accordion-content {
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 38px;
+}
+
+.ui-accordion .ui-accordion-header {
+  height: 114px;
+  margin: 0;
+  border-top: 1px solid #CACACA;
+}
+
+.ui-accordion, .ui-accordion-header:last-child {
+  border-bottom: 1px solid #CACACA;
+}
+
+.ui-accordion-header-icon, 
+.ui-icon, 
+.ui-icon-triangle-1-e {
+  display: none;
+}
+
+.catalog-painters__drop {
+  padding-top: 25px;
+  padding-bottom: 38px;
+  column-count: 3;
+  column-gap: 84px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.catalog-painters__link {
+  color: #333333;
+  width: auto;
+}
+
+.catalog-painters__link:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.catalog-painters__link:active {
+  color: var(--active-focus-color);
+}
+
+.catalog-painters {
+  display: none;
+  max-width: 750px;
+}
+
+.catalog-painters.active {
+  display: block;
+}
+
+.ui-accordion-header:hover {
+  border-top:1px solid var(--hover-color);
+  border-bottom:1px solid var(--hover-color);
+  transition: .3s;
+}
+
+.ui-accordion-header:active{
+  border-top:1px solid var(--active-focus-color);
+  border-bottom:1px solid var(--active-focus-color);
+}
+
+.ui-state-focus:focus {
+  outline: 2px solid var(--active-focus-color);
+}
+
+.ui-accordion-header:hover
+.catalog-painters__years {
+  color: var(--hover-color);
+  transition: .3s;
+}
+
+.ui-accordion-header:hover
+.catalog-painters__icon {
+  color: var(--hover-color);
+  transition: .3s;
+}
+
+.ui-accordion-header:active
+.catalog-painters__years {
+  color: var(--active-focus-color);
+}
+
+.ui-accordion-header:active
+.catalog-painters__icon {
+  color: var(--active-focus-color);
+}
+
+.ui-accordion-content-active {
+  border-top: 1px solid var(--hover-color);
+}

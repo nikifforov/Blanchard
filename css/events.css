@@ -1,0 +1,133 @@
+.events {
+  padding-top: 80px;
+  padding-bottom: 82px;
+}
+
+.events-title {
+  margin-bottom: 20px !important;
+}
+
+.events-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} 
+
+.events-item {
+  max-width: 500px;
+  min-height: 700px;
+  margin-bottom: 50px;
+  border: 1px solid #CACACA;
+}
+
+.events-item__img {
+  margin-bottom: 11px;
+}
+
+.events-item__span {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  margin-right: 19px;
+  text-align: right;
+}
+
+.events-item__place,
+.events-item__data {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.events-item__description {
+  position:relative;
+  max-width: 400px;
+  min-height: 300px;
+  margin-left: 50px;
+}
+
+.events-item__title {
+  margin-bottom: 5px;
+}
+
+.events-item__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 33px;
+}
+
+.events-item__push {
+  position: absolute;
+  bottom: 0px;
+}
+
+.events-item__link {
+  font-size: 16px;
+  color: #9D5CD0;
+  text-decoration: underline;
+}
+
+.events-item__link:hover {
+  font-weight: bold;
+  transition: .3s;
+}
+
+.events-item__link:active {
+  font-weight: bold;
+  color: var(--active-focus-color);
+}
+
+.events-item__link:focus {
+  border: 2px solid var(--active-focus-color);
+}
+
+.events-btn {
+  margin-left: 706px;
+  width: 188px;
+  height: 59px;
+  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--btn-color);
+  outline: none;
+  border: 2px solid var(--btn-color);
+  border-radius: 100px;
+}
+
+.events-btn:hover {
+  color: #ffffff;
+  background-color: var(--btn-color);
+  border: 3px solid #D1A9F0;
+}
+
+.events-btn:active {
+  color: #ffffff;
+  background-color: var(--active-focus-color);
+  border: 3px solid rgba(209, 169, 240, 1);
+}
+
+.events-btn:focus::after {
+  content: '';
+  position: absolute;
+  width: 198px;
+  height: 69px;
+  margin-top: -24px;
+  margin-left: -159px;
+  border: 2px solid var(--btn-color);
+  border-radius: 100px;
+}
+
+.events-item:nth-child(n+4) {
+  display: none;
+}
+
+.events-item.is-visible {
+  display: block;
+}
+
+.is-invisible {
+  display: none;
+}
