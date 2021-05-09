@@ -16,13 +16,10 @@
   <script src="/js/simplebar.js"></script>
   <script src="/js/jquery/jquery.js"></script>
   <script src="/js/jquery/jquery-ui.min.js"></script>
-  <script src="/js/accordion.js"></script>
-  <script src="/js/tabs.js"></script>
+  <script src="/js/accordion.js"></script> 
   <script src="/js/tooltips.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=23d66a73-97a7-427b-af79-1de2b9168326"></script>
   <script src="/js/map.js"></script>
-
-  <script src="/js/main.js"></script>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/gallery-slider.css">
   <link rel="stylesheet" href="/css/dropdown.css">
@@ -36,36 +33,36 @@
   <header class="header">
     <div class="first-header">
       <div class="first-header__container container">
-        <h1 class="main-title">Blanchard художественная галерея</h1>
-        <a href="#" class="logo-link">
+        <h1 class="main-title" tabindex="-1">Blanchard художественная галерея</h1>
+        <a href="#" class="logo-link" aria-label="Логотип" tabindex="0" >
             <img src="/img/header/logo.png" alt="logo">
         </a>
         <nav class="first-nav">
           <ul class="first-nav__items">
             <li class="first-nav__item">
-              <a href="#about" class="first-nav__link">О нас</a>
+              <a href="#about" class="first-nav__link" aria-label="О нас" tabindex="1">О нас</a>
             </li>
             <li class="first-nav__item">
-              <a href="#gallery" class="first-nav__link">Галерея</a>
+              <a href="#gallery" class="first-nav__link" aria-label="Галерея" tabindex="2">Галерея</a>
             </li>
             <li class="first-nav__item">
-              <a href="#catalog" class="first-nav__link">Каталог</a>
+              <a href="#catalog" class="first-nav__link" aria-label="Каталог" tabindex="3">Каталог</a>
             </li>
             <li class="first-nav__item">
-              <a href="#events" class="first-nav__link">События</a>
+              <a href="#events" class="first-nav__link" aria-label="События" tabindex="4">События</a>
             </li>
             <li class="first-nav__item">
-              <a href="#publication" class="first-nav__link">Издания</a>
+              <a href="#publication" class="first-nav__link" aria-label="Издания" tabindex="5">Издания</a>
             </li>
             <li class="first-nav__item">
-              <a href="#projects" class="first-nav__link">Проекты</a>
+              <a href="#projects" class="first-nav__link" aria-label="Проекты" tabindex="6">Проекты</a>
             </li>
             <li class="first-nav__item">
-              <a href="#contacts" class="first-nav__link">Контакты</a>
+              <a href="#contacts" class="first-nav__link" aria-label="Контакты" tabindex="7">Контакты</a>
             </li>
           </ul>
         </nav>
-        <a href="#" class="first-header__link">
+        <a href="#" class="first-header__link" aria-label="Кнопка войти" tabindex="8">
           <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="black"/>
             <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="currentColor"/>
@@ -77,8 +74,8 @@
       <div class="second-header__container container">
         <nav class="second-nav">
           <ul class="second-nav__items">
-            <li id="second-nav__item1" class="second-nav__item">
-              <button class="second-nav__link">
+            <li id="second-nav__item1" class="second-nav__item" aria-label="Выпадающий список Реализм" tabindex="9">
+              <button class="second-nav__link" >
                 Реализм 
                 <svg class="second-nav__icon" width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 5L6 10L0.999997 5" stroke="currentColor"/>
@@ -86,17 +83,17 @@
               </button>
               <div class="dropdown dropdown-first" data-simplebar>
                 <ul>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#">Баженов</a></li>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#">Икинс</a></li>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#">Айтель</a></li>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#">Аулт</a></li>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#">Барро</a></li>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#">Бектл</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#" aria-label="Баженов" tabindex="10">Баженов</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#" aria-label="Икинс" tabindex="11">Икинс</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#" aria-label="Айтель" tabindex="12">Айтель</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#" aria-label="Аулт" tabindex="13">Аулт</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#" aria-label="Барро" tabindex="14">Барро</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#" aria-label="Бектл" tabindex="15">Бектл</a></li>
                 </ul>
               </div>
             </li>
             <li id="second-nav__item2" class="second-nav__item">
-              <button class="second-nav__link">
+              <button class="second-nav__link" aria-label="Выпадающий список Импрессионизм" tabindex="16">
                 Импрессионизм 
                 <svg class="second-nav__icon" width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 5L6 10L0.999997 5" stroke="currentColor"/>
@@ -104,12 +101,12 @@
               </button>
               <div class="dropdown dropdown-second" data-simplebar>
                 <ul>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#">Дюпре</a></li>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#">Писсарро</a></li>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#">Фаттори</a></li>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#">Буден</a></li>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#">Мане</a></li>
-                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#">Синьорини</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#" aria-label="Дюпре" tabindex="17">Дюпре</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#" aria-label="Писсарро" tabindex="18">Писсарро</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#" aria-label="Фаттори" tabindex="19">Фаттори</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#" aria-label="Буден" tabindex="20">Буден</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/1.png);"><a href="#" aria-label="Мане" tabindex="21">Мане</a></li>
+                  <li class="dropdown__items" style="background-image: url(/img/dropdown/2.png);"><a href="#" aria-label="Синьорини" tabindex="22">Синьорини</a></li>
                 </ul>
               </div>
             </li>
@@ -389,33 +386,35 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-buttons">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="catalog" id="catalog">
-      <div id="tabs" class="catalog-container container">
+    <section class="catalog">
+      <div class="catalog-container container">
         <div class="catalog-language"> 
           <div class="catalog-language__choice">
             <h2 class="catalog-title title">Каталог</h2>
-            <ul>
-              <li class="catalog-language__item"><a href="#tabs-1"><img class="catalog-language__icon" src="/img/catalog/flags/frn.jpg" alt=""></a></li>
-              <li class="catalog-language__item"><a href="#tabs-2"><img class="catalog-language__icon" src="/img/catalog/flags/ger.jpg" alt=""></a></li>
-              <li class="catalog-language__item"><a href="#tabs-3"><img class="catalog-language__icon" src="/img/catalog/flags/ita.jpg" alt=""></a></li>
-              <li class="catalog-language__item"><a href="#tabs-4"><img class="catalog-language__icon" src="/img/catalog/flags/rus.jpg" alt=""></a></li>
-              <li class="catalog-language__item"><a href="#tabs-5"><img class="catalog-language__icon" src="/img/catalog/flags/bel.jpg" alt=""></a></li>
+            <ul class="language__items">
+              <li class="language__item"><button class="language-btn active-btn btn" data-path="France"><img class="catalog-language__icon" src="/img/catalog/flags/frn.jpg" alt="France"></button></li>
+              <li class="language__item"><button class="language-btn btn" data-path="Germany"><img class="catalog-language__icon" src="/img/catalog/flags/ger.jpg" alt="Germany"></button></li>
+              <li class="language__item"><button class="language-btn btn" data-path="Italia"><img class="catalog-language__icon" src="/img/catalog/flags/ita.jpg" alt="Italia"></button></li>
+              <li class="language__item"><button class="language-btn btn" data-path="Russia"><img class="catalog-language__icon" src="/img/catalog/flags/rus.jpg" alt="Russia"></button></li>
+              <li class="language__item"><button class="language-btn btn" data-path="Belgeum"><img class="catalog-language__icon" src="/img/catalog/flags/bel.jpg" alt="Belgeum"></button></li>
             </ul>
           </div>
           <p class="catalog-language__description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, 
             будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, 
             нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
         </div>
-        <div id="tabs-1">
+        <div class="catalog-mian catalog-mian-active" data-target="France" >
           <div class="catalog-painters__container">
-            <div id="block1" class="catalog-painters active">
+            <div id="block1" class="catalog-painters catalog-painters-active" data-pain="France">
               <img class="catalog-painters__img" src="/img/catalog/France/15th_century/Teseida.jpg" alt="Бартелеми д’Эйк">
               <p class="catalog-painters__name">Бартелеми д’Эйк</p>
               <span class="catalog-painters__year">1420 — 1470.</span>
@@ -659,13 +658,13 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li><a class="catalog-painters__link" data-num="1">Бартелеми д’Эйк</a></li>
-                    <li><a class="catalog-painters__link" data-num="2">Йос Лиферинкс</a></li>
-                    <li><a class="catalog-painters__link" data-num="3">Жан Фуке</a></li>
-                    <li><a class="catalog-painters__link" data-num="4">Симо́н Мармио́н</a></li>
+                    <li><button class="catalog-painters__link catalog-painters__link_active" data-num="1" data-link="France">Бартелеми д’Эйк</button></li>
+                    <li><button class="catalog-painters__link" data-num="2">Йос Лиферинкс</button></li>
+                    <li><button class="catalog-painters__link" data-num="3">Жан Фуке</button></li>
+                    <li><button class="catalog-painters__link" data-num="4">Симо́н Мармио́н</button></li>
                   </ul>
                 </div>
-                <div class="catalog-painters__heade">
+                <div class="catalog-painters__header">
                   <div class="catalog-painters__item">
                     <a class="catalog-painters__years" href="#">C 1500 по 1599 гг.</a>
                     <a class="catalog-painters__icon" href="#">
@@ -679,13 +678,13 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="5">Этьен Дюмустье</li>
-                    <li class="catalog-painters__link" data-num="6">Косм II Дюмустье</li>
-                    <li class="catalog-painters__link" data-num="7">Россо Фьорентино</li>
-                    <li class="catalog-painters__link" data-num="8">Франче́ско Примати́ччо</li>
+                    <li><button class="catalog-painters__link" data-num="5">Этьен Дюмустье</button></li>
+                    <li><button class="catalog-painters__link" data-num="6">Косм II Дюмустье</button></li>
+                    <li><button class="catalog-painters__link" data-num="7">Россо Фьорентино</button></li>
+                    <li><button class="catalog-painters__link" data-num="8">Франче́ско Примати́ччо</button></li>
                   </ul>
                 </div>
-                <div class="catalog-painters__heade">
+                <div class="catalog-painters__header">
                   <div class="catalog-painters__item">
                     <a class="catalog-painters__years" href="#">C 1600 по 1699 гг.</a>
                     <a class="catalog-painters__icon" href="#">
@@ -699,13 +698,13 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="9">Жак д’Ага́р</li>
-                    <li class="catalog-painters__link" data-num="10">Николя Бертен</li>
-                    <li class="catalog-painters__link" data-num="11">Никола́ де Ларжилье́р</li>
-                    <li class="catalog-painters__link" data-num="12">Роже де Пиль</li>
+                    <li><button class="catalog-painters__link" data-num="9">Жак д’Ага́р</button></li>
+                    <li><button class="catalog-painters__link" data-num="10">Николя Бертен</button></li>
+                    <li><button class="catalog-painters__link" data-num="11">Никола́ де Ларжилье́р</button></li>
+                    <li><button class="catalog-painters__link" data-num="12">Роже де Пиль</button></li>
                   </ul>
                 </div>
-                <div class="catalog-painters__heade">
+                <div class="catalog-painters__header">
                   <div class="catalog-painters__item">
                     <a class="catalog-painters__years" href="#">C 1700 по 1799 гг.</a>
                     <a class="catalog-painters__icon" href="#">
@@ -719,13 +718,13 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="13">Жан Барде́н</li>
-                    <li class="catalog-painters__link" data-num="14">Жозе́ф-Сиффре́д Дюплесси́</li>
-                    <li class="catalog-painters__link" data-num="15">Антуан Куапель</li>
-                    <li class="catalog-painters__link" data-num="16">Анри−Франсуа Ризенер</li>
+                    <li><button class="catalog-painters__link" data-num="13">Жан Барде́н</button></li>
+                    <li><button class="catalog-painters__link" data-num="14">Жозе́ф-Сиффре́д Дюплесси́</button></li>
+                    <li><button class="catalog-painters__link" data-num="15">Антуан Куапель</button></li>
+                    <li><button class="catalog-painters__link" data-num="16">Анри−Франсуа Ризенер</button></li>
                   </ul>
                 </div>
-                <div class="catalog-painters__heade">
+                <div class="catalog-painters__header">
                   <div class="catalog-painters__item">
                     <a class="catalog-painters__years" href="#">C 1800 по 1899 гг.</a>
                     <a class="catalog-painters__icon" href="#">
@@ -739,13 +738,13 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="17">Абе́ль де Пюжо́ль</li>
-                    <li class="catalog-painters__link" data-num="18">Раймон Бонёр</li>
-                    <li class="catalog-painters__link" data-num="19">Антонен Дом</li>
-                    <li class="catalog-painters__link" data-num="20">Адольф-Леон Виллетт</li>
+                    <li><button class="catalog-painters__link" data-num="17">Абе́ль де Пюжо́ль</button></li>
+                    <li><button class="catalog-painters__link" data-num="18">Раймон Бонёр</button></li>
+                    <li><button class="catalog-painters__link" data-num="19">Антонен Дом</button></li>
+                    <li><button class="catalog-painters__link" data-num="20">Адольф-Леон Виллетт</button></li>
                   </ul>
                 </div>
-                <div class="catalog-painters__heade">
+                <div class="catalog-painters__header">
                   <div class="catalog-painters__item">
                     <a class="catalog-painters__years" href="#">C 1900 по 1999 гг.</a>
                     <a class="catalog-painters__icon" href="#">
@@ -759,13 +758,13 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="21">Поль-Эмиль Бутиньи</li>
-                    <li class="catalog-painters__link" data-num="22">Эдуа́р Анри́ Аври́ль</li>
-                    <li class="catalog-painters__link" data-num="23">Куртуа Гюстав</li>
-                    <li class="catalog-painters__link" data-num="24">Альбе́р Марке́</li>
+                    <li><button class="catalog-painters__link" data-num="21">Поль-Эмиль Бутиньи</button></li>
+                    <li><button class="catalog-painters__link" data-num="22">Эдуа́р Анри́ Аври́ль</button></li>
+                    <li><button class="catalog-painters__link" data-num="23">Куртуа Гюстав</button></li>
+                    <li><button class="catalog-painters__link" data-num="24">Альбе́р Марке́</button></li>
                   </ul>
                 </div>
-                <div class="catalog-painters__heade">
+                <div class="catalog-painters__header">
                   <div class="catalog-painters__item">
                     <a class="catalog-painters__years" href="#">C 2000 г.</a>
                     <a class="catalog-painters__icon" href="#">
@@ -779,19 +778,19 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="25">Арно Курле де Врежий</li>
-                    <li class="catalog-painters__link" data-num="26">Риад Бейрути</li>
-                    <li class="catalog-painters__link" data-num="27">Нико́ль Клавелу́</li>
-                    <li class="catalog-painters__link" data-num="28">Сирил Конго</li>
+                    <li><button class="catalog-painters__link" data-num="25">Арно Курле де Врежий</button></li>
+                    <li><button class="catalog-painters__link" data-num="26">Риад Бейрути</button></li>
+                    <li><button class="catalog-painters__link" data-num="27">Нико́ль Клавелу́</button></li>
+                    <li><button class="catalog-painters__link" data-num="28">Сирил Конго</button></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="tabs-2">
+        <div class="catalog-mian" data-target="Germany">
           <div class="catalog-painters__container">
-            <div id="block29" class="catalog-painters active">
+            <div id="block29" class="catalog-painters catalog-painters-active" data-pain="Germany">
               <img class="catalog-painters__img" src="/img/catalog/Germany/15th_century/Hans_Burgkmair.jpg" alt="Ханс Бургкмайр">
               <p class="catalog-painters__name">Ханс Бургкмайр</p>
               <span class="catalog-painters__year">1473 — 1531.</span>
@@ -1018,10 +1017,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li><a class="catalog-painters__link" data-num="29">Ханс Бургкмайр</a></li>
-                    <li><a class="catalog-painters__link" data-num="30">Ганс Гольбейн Старший</a></li>
-                    <li><a class="catalog-painters__link" data-num="31">Мастер Франке</a></li>
-                    <li><a class="catalog-painters__link" data-num="32">Бартоломеус Цайтблом</a></li>
+                    <li><button class="catalog-painters__link" data-num="29" data-link="Germany">Ханс Бургкмайр</button></li>
+                    <li><button class="catalog-painters__link" data-num="30">Ганс Гольбейн Старший</button></li>
+                    <li><button class="catalog-painters__link" data-num="31">Мастер Франке</button></li>
+                    <li><button class="catalog-painters__link" data-num="32">Бартоломеус Цайтблом</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1038,10 +1037,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="33">Ханс фон Аахен</li>
-                    <li class="catalog-painters__link" data-num="34">Ханс Бальдунг</li>
-                    <li class="catalog-painters__link" data-num="35">Михаэль Вольгемут</li>
-                    <li class="catalog-painters__link" data-num="36">А́льбрехт Дю́рер</li>
+                    <li><button class="catalog-painters__link" data-num="33">Ханс фон Аахен</button></li>
+                    <li><button class="catalog-painters__link" data-num="34">Ханс Бальдунг</button></li>
+                    <li><button class="catalog-painters__link" data-num="35">Михаэль Вольгемут</button></li>
+                    <li><button class="catalog-painters__link" data-num="36">А́льбрехт Дю́рер</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1058,10 +1057,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="37">Вильманн Михаэль</li>
-                    <li class="catalog-painters__link" data-num="38">Зандрарт Иоахим фон</li>
-                    <li class="catalog-painters__link" data-num="39">Иоганн Лингельбах</li>
-                    <li class="catalog-painters__link" data-num="40">Даниэль Прейслер</li>
+                    <li><button class="catalog-painters__link" data-num="37">Вильманн Михаэль</button></li>
+                    <li><button class="catalog-painters__link" data-num="38">Зандрарт Иоахим фон</button></li>
+                    <li><button class="catalog-painters__link" data-num="39">Иоганн Лингельбах</button></li>
+                    <li><button class="catalog-painters__link" data-num="40">Даниэль Прейслер</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1078,10 +1077,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="41">Антон Графф</li>
-                    <li class="catalog-painters__link" data-num="42">Иоганн Петер фон Лангер</li>
-                    <li class="catalog-painters__link" data-num="43">Асмус Якоб Карстенс</li>
-                    <li class="catalog-painters__link" data-num="44">Иога́нн Рейнха́рт</li>
+                    <li><button class="catalog-painters__link" data-num="41">Антон Графф</button></li>
+                    <li><button class="catalog-painters__link" data-num="42">Иоганн Петер фон Лангер</button></li>
+                    <li><button class="catalog-painters__link" data-num="43">Асмус Якоб Карстенс</button></li>
+                    <li><button class="catalog-painters__link" data-num="44">Иога́нн Рейнха́рт</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1098,10 +1097,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="45">Альбрехт Адам</li>
-                    <li class="catalog-painters__link" data-num="46">Август Байер</li>
-                    <li class="catalog-painters__link" data-num="47">Генрих Гофман</li>
-                    <li class="catalog-painters__link" data-num="48">Людвиг Зайтц</li>
+                    <li><button class="catalog-painters__link" data-num="45">Альбрехт Адам</button></li>
+                    <li><button class="catalog-painters__link" data-num="46">Август Байер</button></li>
+                    <li><button class="catalog-painters__link" data-num="47">Генрих Гофман</button></li>
+                    <li><button class="catalog-painters__link" data-num="48">Людвиг Зайтц</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1118,10 +1117,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="49">Жан Арп</li>
-                    <li class="catalog-painters__link" data-num="50">Макс Бе́кманн</li>
-                    <li class="catalog-painters__link" data-num="51">Лю́двиг Де́тман</li>
-                    <li class="catalog-painters__link" data-num="52">Отто Дикс</li>
+                    <li><button class="catalog-painters__link" data-num="49">Жан Арп</button></li>
+                    <li><button class="catalog-painters__link" data-num="50">Макс Бе́кманн</button></li>
+                    <li><button class="catalog-painters__link" data-num="51">Лю́двиг Де́тман</button></li>
+                    <li><button class="catalog-painters__link" data-num="52">Отто Дикс</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1138,19 +1137,19 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="53">Герберт Ахтернбуш</li>
-                    <li class="catalog-painters__link" data-num="54">Пауль Вундерлих</li>
-                    <li class="catalog-painters__link" data-num="55">Рудольф Зитте</li>
-                    <li class="catalog-painters__link" data-num="56">А. Р. Пенк</li>
+                    <li><button class="catalog-painters__link" data-num="53">Герберт Ахтернбуш</button></li>
+                    <li><button class="catalog-painters__link" data-num="54">Пауль Вундерлих</button></li>
+                    <li><button class="catalog-painters__link" data-num="55">Рудольф Зитте</button></li>
+                    <li><button class="catalog-painters__link" data-num="56">А. Р. Пенк</button></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="tabs-3">
+        <div class="catalog-mian" data-target="Italia">
           <div class="catalog-painters__container">
-            <div id="block57" class="catalog-painters active">
+            <div id="block57" class="catalog-painters catalog-painters-active" data-pain="Italia">
               <img class="catalog-painters__img" src="/img/catalog/italia/15th_century/benedetto.jpg" alt="Бенедетто ди Биндо">
               <p class="catalog-painters__name">Бенедетто ди Биндо</p>
               <span class="catalog-painters__year">1380-e — 19 сентября 1417.</span>
@@ -1505,21 +1504,21 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li><a class="catalog-painters__link" data-num="57">Бенедетто ди Биндо</a></li>
-                    <li><a class="catalog-painters__link" data-num="58">Бергоньоне Амброджо</a></li>
-                    <li><a class="catalog-painters__link" data-num="59">Биссоло Франческо</a></li>
-                    <li><a class="catalog-painters__link" data-num="60">Больтраффио Джованни</a></li>
-                    <li><a class="catalog-painters__link" data-num="61">Бонсиньори Франческо</a></li>
-                    <li><a class="catalog-painters__link" data-num="62">Боттичини Рафаэлло</a></li>
-                    <li><a class="catalog-painters__link" data-num="63">Брамантино</a></li>
-                    <li><a class="catalog-painters__link" data-num="64">Бреа Людовико</a></li>
-                    <li><a class="catalog-painters__link" data-num="65">Бьяджо д’Антонио Туччи</a></li>
-                    <li><a class="catalog-painters__link" data-num="66">Веккьетта</a></li>
-                    <li><a class="catalog-painters__link" data-num="67">Андреа Верроккьо</a></li>
-                    <li><a class="catalog-painters__link" data-num="68">Доменико Гирландайо</a></li>
-                    <li><a class="catalog-painters__link" data-num="69">Беноццо Гоццоли</a></li>
-                    <li><a class="catalog-painters__link" data-num="70">Граначчи Франческо</a></li>
-                    <li><a class="catalog-painters__link" data-num="71">Грегорио ди Чекко</a></li>
+                    <li><button class="catalog-painters__link" data-num="57" data-link="Italia">Бенедетто ди Биндо</button></li>
+                    <li><button class="catalog-painters__link" data-num="58">Бергоньоне Амброджо</button></li>
+                    <li><button class="catalog-painters__link" data-num="59">Биссоло Франческо</button></li>
+                    <li><button class="catalog-painters__link" data-num="60">Больтраффио Джованни</button></li>
+                    <li><button class="catalog-painters__link" data-num="61">Бонсиньори Франческо</button></li>
+                    <li><button class="catalog-painters__link" data-num="62">Боттичини Рафаэлло</button></li>
+                    <li><button class="catalog-painters__link" data-num="63">Брамантино</button></li>
+                    <li><button class="catalog-painters__link" data-num="64">Бреа Людовико</button></li>
+                    <li><button class="catalog-painters__link" data-num="65">Бьяджо д’Антонио Туччи</button></li>
+                    <li><button class="catalog-painters__link" data-num="66">Веккьетта</button></li>
+                    <li><button class="catalog-painters__link" data-num="67">Андреа Верроккьо</button></li>
+                    <li><button class="catalog-painters__link" data-num="68">Доменико Гирландайо</button></li>
+                    <li><button class="catalog-painters__link" data-num="69">Беноццо Гоццоли</button></li>
+                    <li><button class="catalog-painters__link" data-num="70">Граначчи Франческо</button></li>
+                    <li><button class="catalog-painters__link" data-num="71">Грегорио ди Чекко</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1536,10 +1535,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li><a class="catalog-painters__link" data-num="72">Аббате Никколо дель</a></li>
-                    <li><a class="catalog-painters__link" data-num="73">Джамболонья</a></li>
-                    <li><a class="catalog-painters__link" data-num="74">Витторе Карпаччо</a></li>
-                    <li><a class="catalog-painters__link" data-num="75">Содома</a></li>
+                    <li><button class="catalog-painters__link" data-num="72">Аббате Никколо дель</button></li>
+                    <li><button class="catalog-painters__link" data-num="73">Джамболонья</button></li>
+                    <li><button class="catalog-painters__link" data-num="74">Витторе Карпаччо</button></li>
+                    <li><button class="catalog-painters__link" data-num="75">Содома</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1556,10 +1555,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li><a class="catalog-painters__link" data-num="76">Доменикино</a></li>
-                    <li><a class="catalog-painters__link" data-num="77">Аббиати Филиппо</a></li>
-                    <li><a class="catalog-painters__link" data-num="78">Ваннини Оттавио</a></li>
-                    <li><a class="catalog-painters__link" data-num="79">Леони Оттавио</a></li>
+                    <li><button class="catalog-painters__link" data-num="76">Доменикино</button></li>
+                    <li><button class="catalog-painters__link" data-num="77">Аббиати Филиппо</button></li>
+                    <li><button class="catalog-painters__link" data-num="78">Ваннини Оттавио</button></li>
+                    <li><button class="catalog-painters__link" data-num="79">Леони Оттавио</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1576,10 +1575,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li><a class="catalog-painters__link" data-num="80">Балестра Антонио</a></li>
-                    <li><a class="catalog-painters__link" data-num="81">Тибальди Мария Феличе</a></li>
-                    <li><a class="catalog-painters__link" data-num="82">Риччи Себастьяно</a></li>
-                    <li><a class="catalog-painters__link" data-num="83">Карлеварис Лука</a></li>
+                    <li><button class="catalog-painters__link" data-num="80">Балестра Антонио</button></li>
+                    <li><button class="catalog-painters__link" data-num="81">Тибальди Мария Феличе</button></li>
+                    <li><button class="catalog-painters__link" data-num="82">Риччи Себастьяно</button></li>
+                    <li><button class="catalog-painters__link" data-num="83">Карлеварис Лука</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1596,10 +1595,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li><a class="catalog-painters__link" data-num="84">Гамбоджи Рафаэлло</a></li>
-                    <li><a class="catalog-painters__link" data-num="85">Айец Франческо</a></li>
-                    <li><a class="catalog-painters__link" data-num="86">Муссини Луиджи</a></li>
-                    <li><a class="catalog-painters__link" data-num="87">Чечони Адриано</a></li>
+                    <li><button class="catalog-painters__link" data-num="84">Гамбоджи Рафаэлло</button></li>
+                    <li><button class="catalog-painters__link" data-num="85">Айец Франческо</button></li>
+                    <li><button class="catalog-painters__link" data-num="86">Муссини Луиджи</button></li>
+                    <li><button class="catalog-painters__link" data-num="87">Чечони Адриано</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1616,10 +1615,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li><a class="catalog-painters__link" data-num="88">Абате Алессандро</a></li>
-                    <li><a class="catalog-painters__link" data-num="89">Джорджо де Кирико</a></li>
-                    <li><a class="catalog-painters__link" data-num="90">Джа́комо Манцу́</a></li>
-                    <li><a class="catalog-painters__link" data-num="91">Лучо Фонтана</a></li>
+                    <li><button class="catalog-painters__link" data-num="88">Абате Алессандро</button></li>
+                    <li><button class="catalog-painters__link" data-num="89">Джорджо де Кирико</button></li>
+                    <li><button class="catalog-painters__link" data-num="90">Джа́комо Манцу́</button></li>
+                    <li><button class="catalog-painters__link" data-num="91">Лучо Фонтана</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1636,19 +1635,19 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li><a class="catalog-painters__link" data-num="92">Валерио Адами</a></li>
-                    <li><a class="catalog-painters__link" data-num="93">Катания Чезаре</a></li>
-                    <li><a class="catalog-painters__link" data-num="94">Гвидо Марзулли</a></li>
-                    <li><a class="catalog-painters__link" data-num="95">Франческо Клементе</a></li>
+                    <li><button class="catalog-painters__link" data-num="92">Валерио Адами</button></li>
+                    <li><button class="catalog-painters__link" data-num="93">Катания Чезаре</button></li>
+                    <li><button class="catalog-painters__link" data-num="94">Гвидо Марзулли</button></li>
+                    <li><button class="catalog-painters__link" data-num="95">Франческо Клементе</button></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="tabs-4">
+        <div class="catalog-mian" data-target="Russia">
           <div class="catalog-painters__container">
-            <div id="block96" class="catalog-painters active">
+            <div id="block96" class="catalog-painters catalog-painters-active" data-pain="Russia">
               <img class="catalog-painters__img" src="/img/catalog/Russia/15th_century/Filigree.jpg" alt="Амвросий">
               <p class="catalog-painters__name">Амвросий</p>
               <span class="catalog-painters__year">неизвестно — ок. 1494.</span>
@@ -1856,10 +1855,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li><a class="catalog-painters__link" data-num="96">Амвросий</a></li>
-                    <li><a class="catalog-painters__link" data-num="97">Дионисий</a></li>
-                    <li><a class="catalog-painters__link" data-num="98">Прохор с Городца</a></li>
-                    <li><a class="catalog-painters__link" data-num="99">Андрей Рублёв</a></li>
+                    <li><button class="catalog-painters__link" data-num="96" data-link="Russia">Амвросий</button></li>
+                    <li><button class="catalog-painters__link" data-num="97">Дионисий</button></li>
+                    <li><button class="catalog-painters__link" data-num="98">Прохор с Городца</button></li>
+                    <li><button class="catalog-painters__link" data-num="99">Андрей Рублёв</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1876,7 +1875,7 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="100">Прокопий Чирин</li>
+                    <li><button class="catalog-painters__link" data-num="100">Прокопий Чирин</button></li>
                     <!-- <li class="catalog-painters__link" data-num="101">Ханс Бальдунг</li>
                     <li class="catalog-painters__link" data-num="102">Михаэль Вольгемут</li>
                     <li class="catalog-painters__link" data-num="103">А́льбрехт Дю́рер</li> -->
@@ -1896,10 +1895,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="104">Васи́лий Ко́рень</li>
-                    <li class="catalog-painters__link" data-num="105">Гурий Кинешемцев</li>
-                    <li class="catalog-painters__link" data-num="106">Гео́ргий Зино́вьев</li>
-                    <li class="catalog-painters__link" data-num="107">Карп Золотарёв</li>
+                    <li><button class="catalog-painters__link" data-num="104">Васи́лий Ко́рень</button></li>
+                    <li><button class="catalog-painters__link" data-num="105">Гурий Кинешемцев</button></li>
+                    <li><button class="catalog-painters__link" data-num="106">Гео́ргий Зино́вьев</button></li>
+                    <li><button class="catalog-painters__link" data-num="107">Карп Золотарёв</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1916,10 +1915,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="108">Ива́н Аргуно́в</li>
-                    <li class="catalog-painters__link" data-num="109">Андрей Иванов</li>
-                    <li class="catalog-painters__link" data-num="110">Андрей Екимов</li>
-                    <li class="catalog-painters__link" data-num="111">Григо́рий Угрю́мов</li>
+                    <li><button class="catalog-painters__link" data-num="108">Ива́н Аргуно́в</button></li>
+                    <li><button class="catalog-painters__link" data-num="109">Андрей Иванов</button></li>
+                    <li><button class="catalog-painters__link" data-num="110">Андрей Екимов</button></li>
+                    <li><button class="catalog-painters__link" data-num="111">Григо́рий Угрю́мов</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1936,10 +1935,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="112">Алекса́ндр А́гин</li>
-                    <li class="catalog-painters__link" data-num="113">Николай Бажин</li>
-                    <li class="catalog-painters__link" data-num="114">Степан Галактионов</li>
-                    <li class="catalog-painters__link" data-num="115">Александр Зауерве́йд</li>
+                    <li><button class="catalog-painters__link" data-num="112">Алекса́ндр А́гин</button></li>
+                    <li><button class="catalog-painters__link" data-num="113">Николай Бажин</button></li>
+                    <li><button class="catalog-painters__link" data-num="114">Степан Галактионов</button></li>
+                    <li><button class="catalog-painters__link" data-num="115">Александр Зауерве́йд</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1956,10 +1955,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="116">Алекса́ндр Бе́ггров</li>
-                    <li class="catalog-painters__link" data-num="117">Эми́ль Ви́зель</li>
-                    <li class="catalog-painters__link" data-num="118">Мухамед Арсланов</li>
-                    <li class="catalog-painters__link" data-num="119">Ви́ктор Васнецо́в</li>
+                    <li><button class="catalog-painters__link" data-num="116">Алекса́ндр Бе́ггров</button></li>
+                    <li><button class="catalog-painters__link" data-num="117">Эми́ль Ви́зель</button></li>
+                    <li><button class="catalog-painters__link" data-num="118">Мухамед Арсланов</button></li>
+                    <li><button class="catalog-painters__link" data-num="119">Ви́ктор Васнецо́в</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -1976,19 +1975,19 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="120">Авети́к Абаджя́н</li>
-                    <li class="catalog-painters__link" data-num="121">Бурьян Олег</li>
-                    <li class="catalog-painters__link" data-num="122">Егор Крафт</li>
-                    <li class="catalog-painters__link" data-num="123">Алексе́й Вау́лин</li>
+                    <li><button class="catalog-painters__link" data-num="120">Авети́к Абаджя́н</button></li>
+                    <li><button class="catalog-painters__link" data-num="121">Бурьян Олег</button></li>
+                    <li><button class="catalog-painters__link" data-num="122">Егор Крафт</button></li>
+                    <li><button class="catalog-painters__link" data-num="123">Алексе́й Вау́лин</button></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="tabs-5">
+        <div class="catalog-mian" data-target="Belgeum">
           <div class="catalog-painters__container">
-            <div id="block124" class="catalog-painters active">
+            <div id="block124" class="catalog-painters catalog-painters-active" data-pain="Belgeum">
               <img class="catalog-painters__img" src="/img/catalog/Belgium/15th_century/Michel_Sittow.jpg" alt="Михель Зи́ттов">
               <p class="catalog-painters__name">Михель Зи́ттов</p>
               <span class="catalog-painters__year">1459 — 21 декабря 1525.</span>
@@ -2183,7 +2182,7 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li><a class="catalog-painters__link" data-num="124">Михель Зи́ттов</a></li>
+                    <li><button class="catalog-painters__link" data-num="124" data-link="Belgeum">Михель Зи́ттов</button></li>
                     <!-- <li><a class="catalog-painters__link" data-num="125">Дионисий</a></li>
                     <li><a class="catalog-painters__link" data-num="126">Прохор с Городца</a></li>
                     <li><a class="catalog-painters__link" data-num="127">Андрей Рублёв</a></li> -->
@@ -2203,7 +2202,7 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="128">Левина Теерлинк</li>
+                    <li><button class="catalog-painters__link" data-num="128">Левина Теерлинк</button></li>
                     <!-- <li class="catalog-painters__link" data-num="129">Ханс Бальдунг</li>
                     <li class="catalog-painters__link" data-num="130">Михаэль Вольгемут</li>
                     <li class="catalog-painters__link" data-num="131">А́льбрехт Дю́рер</li> -->
@@ -2223,7 +2222,7 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="132">Жакуй д'Артуа</li>
+                    <li><button class="catalog-painters__link" data-num="132">Жакуй д'Артуа</button></li>
                     <!-- <li class="catalog-painters__link" data-num="133">Гурий Кинешемцев</li>
                     <li class="catalog-painters__link" data-num="134">Гео́ргий Зино́вьев</li>
                     <li class="catalog-painters__link" data-num="135">Карп Золотарёв</li> -->
@@ -2243,7 +2242,7 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="136">Анри ван Аш</li>
+                    <li><button class="catalog-painters__link" data-num="136">Анри ван Аш</button></li>
                     <!-- <li class="catalog-painters__link" data-num="137">Андрей Иванов</li>
                     <li class="catalog-painters__link" data-num="138">Андрей Екимов</li>
                     <li class="catalog-painters__link" data-num="139">Григо́рий Угрю́мов</li> -->
@@ -2263,10 +2262,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="140">Густав Вапперс</li>
-                    <li class="catalog-painters__link" data-num="141">Жан Вергас</li>
-                    <li class="catalog-painters__link" data-num="142">Мишель Верла́</li>
-                    <li class="catalog-painters__link" data-num="143">Альбин ван ден Абеле</li>
+                    <li><button class="catalog-painters__link" data-num="140">Густав Вапперс</button></li>
+                    <li><button class="catalog-painters__link" data-num="141">Жан Вергас</button></li>
+                    <li><button class="catalog-painters__link" data-num="142">Мишель Верла́</button></li>
+                    <li><button class="catalog-painters__link" data-num="143">Альбин ван ден Абеле</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -2283,10 +2282,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="144">Поль Дельво</li>
-                    <li class="catalog-painters__link" data-num="145">Фёдор Изенбек</li>
-                    <li class="catalog-painters__link" data-num="146">Анто́ Карт</li>
-                    <li class="catalog-painters__link" data-num="147">Хюго Клаус</li>
+                    <li><button class="catalog-painters__link" data-num="144">Поль Дельво</button></li>
+                    <li><button class="catalog-painters__link" data-num="145">Фёдор Изенбек</button></li>
+                    <li><button class="catalog-painters__link" data-num="146">Анто́ Карт</button></li>
+                    <li><button class="catalog-painters__link" data-num="147">Хюго Клаус</button></li>
                   </ul>
                 </div>
                 <div class="catalog-painters__header">
@@ -2303,10 +2302,10 @@
                 </div>
                 <div class="catalog-painters__drop">
                   <ul>
-                    <li class="catalog-painters__link" data-num="148">Фред Бервутс</li>
-                    <li class="catalog-painters__link" data-num="149">Андре Франкин</li>
-                    <li class="catalog-painters__link" data-num="150">Ян Тёнинк</li>
-                    <li class="catalog-painters__link" data-num="151">Хенри Ван Хервеген</li>
+                    <li><button class="catalog-painters__link" data-num="148">Фред Бервутс</button></li>
+                    <li><button class="catalog-painters__link" data-num="149">Андре Франкин</button></li>
+                    <li><button class="catalog-painters__link" data-num="150">Ян Тёнинк</button></li>
+                    <li><button class="catalog-painters__link" data-num="151">Хенри Ван Хервеген</button></li>
                   </ul>
                 </div>
               </div>
@@ -2568,9 +2567,11 @@
             </div>
           </div>
           <!-- Add Pagination -->
-          <div class="publication-slider__prev swiper-button-prev"></div>
-          <div class="publication-slider__next swiper-button-next"></div>
-          <div class="publication-slide-pagination swiper-pagination"></div>
+          <div class="publication-slider__buttons">
+            <div class="publication-slider__prev swiper-button-prev"></div>
+            <div class="publication-slide-pagination swiper-pagination"></div>
+            <div class="publication-slider__next swiper-button-next"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -2606,8 +2607,8 @@
               <div class="projects-slide swiper-slide"><img class="projects-slide__img" src="/img/projects/9.webp" alt="#"></div>
             </div>
             <!-- Add Arrows -->
-            <div class=" swiper-button-next"></div>
-            <div class="projects-slide-prev swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div>
@@ -2618,7 +2619,7 @@
       <div class="contacts-container">
         <div class="contacts-main">
           <h3 class="contacts-main__title">Шоурум №4</h3>
-          <p class="contacts-main__address">Леонтьевский переулок, дом 5, строение 1</p>
+          <address class="contacts-main__address">Леонтьевский переулок, дом 5, строение 1</address>
           <form class="contacts-form form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
             <label class="contacts-form__label">Заказать обратный звонок</label>
             <input class="contacts-form__input input" 
@@ -2648,7 +2649,7 @@
 
     <footer class="footer">
       <div class="footer-container container">
-        <a href="#" class="logo-link">
+        <a href="#" class="footer-logo logo-link">
           <img src="/img/header/logo.png" alt="logo">
         </a>
         <div class="footer-social">
@@ -2682,11 +2683,13 @@
 
   </main>
   <script src="/js/hero-slider.js"></script>
-  <script src="/js/gallery-slider.js"></script> 
+  <script src="/js/gallery-slider.js"></script>
+  <script src="/js/tabs.js"></script>
   <script src="/js/publication-slider.js"></script>
   <script src="/js/projects.js"></script>
   <script src="/js/just-validate.min.js"></script>
   <script src="/js/inputmaskmin.js"></script>
   <script src="/js/form.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>

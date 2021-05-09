@@ -260,6 +260,13 @@ input[type="number"]::-moz-placeholder {
   border-radius: 100px;
 }
 
+.publication-slider__buttons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 32px;
+}
+
 .publication-slider .swiper-button-prev::after,
 .publication-slider .swiper-button-next::after {
   color: #ffffff;
@@ -269,6 +276,7 @@ input[type="number"]::-moz-placeholder {
 
 .publication-slider .swiper-button-prev, 
 .publication-slider .swiper-button-next {
+  position: initial;
   top: 33px;
   left: 10px;
   width: 31px;
@@ -279,18 +287,27 @@ input[type="number"]::-moz-placeholder {
   border-radius: 50px;
 }
 
-.publication-slider__prev.swiper-button-prev{
+.publication-slider .swiper-button-prev {
+  margin-right: 18px;
+}
+
+.publication-slider .swiper-button-next {
+  margin-left: 18px;
+}
+
+/* .publication-slider__prev.swiper-button-prev{
   left: 0px;
 }
 
 .publication-slider__next.swiper-button-next {
   left: 100px;
-}
+} */
 
 .publication-slider .swiper-pagination {
-  width: 51px;
-  top: 40px;
-  left: 39px;
+  position: initial;
+  width: auto;
+  /* top: 40px;
+  left: 39px; */
 }
 
 .publication-slider .swiper-pagination-fraction {

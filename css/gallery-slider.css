@@ -1,3 +1,24 @@
+.choices[data-type*=select-one]::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin-top: 0px;
+  border-style: none;
+  border-color: #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  top: 37%;
+  transform: rotate(45deg);
+}
+
+.choices[data-type*=select-one].is-open::after {
+  margin-top: 0px;
+  top: 50%;
+  border-color: #ffffff;
+  transform: rotate(225deg);
+}
+
 .image-slider.swiper-container {
   max-height: 835px;
 }
@@ -6,9 +27,16 @@
   margin-top: 85px;
 }
 
-.image-slider .swiper-button-prev,
+.image-slider .swiper-button-prev {
+  /* top: 46px; */
+  margin-top: 0px;
+  margin-right: 11px;
+  
+}
+
 .image-slider .swiper-button-next {
-  top: 46px;
+  margin-top: 0px;
+  margin-left: 10px;
 }
 
 .image-slider .swiper-button-prev::after,
@@ -32,6 +60,11 @@
   outline: 3px solid var(--active-focus-color);
 }
 
+.image-slider__slide::before {
+  content: '';
+  opacity: 0;
+  transition: .3s;
+}
 
 .image-slider__slide:hover::before {
   content: '';
@@ -43,6 +76,8 @@
   background-image: url(/img/gallary/plus.png);
   background-repeat: no-repeat;
   cursor: pointer;
+  opacity: 1;
+  transition: .3s;
 }
 
 .image-slider__slide:active::after {
@@ -56,9 +91,16 @@
   cursor: pointer;
 }
 
+.swiper-buttons {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 24px;
+  left: 2px;
+  max-width: 500px;
+}
 
-
-.swiper-button-prev, 
+/* .swiper-button-prev, 
 .swiper-container-rtl .swiper-button-next {
   left: 2px;
 }
@@ -66,10 +108,11 @@
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   left: 102px;
-}
+} */
 
-.swiper-button-prev,
-.swiper-button-next {
+.image-slider .swiper-button-prev,
+.image-slider .swiper-button-next {
+  position: initial;
   width: 31px;
   height: 31px;
   background: #666666;
@@ -97,11 +140,11 @@
 } 
 
 .image-slider .swiper-pagination {
-  width: 51px;
-  max-width: 100px;
-  height: 20px;
+  position: initial;
+  width: auto;
+  /* height: 20px;
   top: 31px;
-  left: 43px;
+  left: 43px; */
 }
 
 .image-slider.swiper-pagination-bullet {

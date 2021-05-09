@@ -35,10 +35,8 @@ $( function() {
 
 $(document).ready(function() {
 	$('.catalog-painters__link').click(function(event) {
-    // var display = $(this).css('display')
-    // $('#block1').css('display','none');
-		$('.catalog-painters').removeClass('active')
+		$('.catalog-painters').removeClass('catalog-painters-active')
 		var num = $(this).attr('data-num');
-		$('#block'+num).addClass('active')
+		$('#block'+num).addClass('catalog-painters-active')
 	});
 });

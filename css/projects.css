@@ -110,6 +110,34 @@
   left: auto;
 }
 
+.projects-slider .swiper-button-prev,
+.projects-slider .swiper-button-next {
+  width: 31px;
+  height: 31px;
+  background: #666666;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 50px;
+  transition: .3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: var(--hover-color);
+  transition: .3s;
+} 
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  background: var(--active-focus-color);
+  border: 2px solid rgba(209, 169, 240, 1);
+} 
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  outline: none;
+  border: 2px solid var(--active-focus-color);
+} 
+
 
 .ui-tooltip-content {
   position: relative;
