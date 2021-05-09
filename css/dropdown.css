@@ -1,4 +1,6 @@
 .second-nav__items  {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -93,6 +95,8 @@
 
 .second-nav__link:hover {
   color: var(--hover-color);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
@@ -106,5 +110,7 @@
 
 .second-nav__link:active
 .second-nav__icon {
-  transform: rotate(180deg) translateY(-3px);
+  -webkit-transform: rotate(180deg) translateY(-3px);
+      -ms-transform: rotate(180deg) translateY(-3px);
+          transform: rotate(180deg) translateY(-3px);
 }

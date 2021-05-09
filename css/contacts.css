@@ -1,6 +1,6 @@
-
-
 .contacts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -47,8 +47,13 @@
 }
 
 .contacts-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 36px;
 }
 
@@ -77,6 +82,8 @@
   outline: none;
   border: 2px solid #9D5CD0;
   border-radius: 100px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
@@ -91,12 +98,16 @@
   margin-left: -9px;
   border: 2px solid #C283F3;
   border-radius: 100px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
 .contacts-form__btn:hover {
   color: #FFFFFF;
   background: var(--hover-color);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
@@ -125,5 +136,6 @@
 
 
 [class*="ground-pane"] {
-  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
