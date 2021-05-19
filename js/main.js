@@ -67,3 +67,19 @@ window.addEventListener('DOMContentLoaded', function(){
   })
 })
 
+
+const modal = new GraphModal();
+
+// document.querySelector('.btn').addEventListener('click', () => {
+// 	new GraphModal().open('second');
+// });
+
+// const modal = new GraphModal({
+// 	isOpen: (modal) => {
+// 		console.log(modal);
+// 		console.log('opened');
+// 	},
+// 	isClose: () => {
+// 		console.log('closed');
+// 	}
+// });

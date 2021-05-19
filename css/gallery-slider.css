@@ -157,3 +157,49 @@
   font-size: 16px;
   color: #fff;
 }
+
+.modal__container {
+  padding: 0px;
+  border-radius: unset;
+}
+
+.modal-content {
+  display: flex;
+}
+
+.modal-text {
+  padding: 110px 50px;
+}
+
+.modal-title {
+  margin: 0;
+  font-weight: 600;
+  color: #333333;
+}
+
+.modal-main__title {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.modal-subtitle {
+  margin-bottom: 9px;
+  font-size: 16px;
+}
+
+.modal-years {
+  margin: 0px;
+  margin-bottom: 41px;
+  font-weight: normal;
+  font-size: 12px;
+  color: #969696;
+}
+
+.modal-discription {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+} 
+
+

@@ -56,8 +56,8 @@
   position: absolute;
   width: 46px;
   height: 46px;
-  top: -2px;
-  left: -2px;
+  /* top: -0px;
+  left: -0px; */
   -webkit-filter: none;
           filter: none;
   border: 2px solid var(--hover-color);
@@ -69,8 +69,8 @@
   position: absolute;
   width: 66px;
   height: 66px;
-  margin-top: -12px;
-  margin-left: -58px;
+  margin-top: -10px;
+  margin-left: -56px;
   border: 2px solid  var(--hover-color);
   border-radius: 100px;
 }
@@ -233,6 +233,7 @@
 .catalog-painters__link:focus {
   outline: none;
   outline: 2px solid var(--active-focus-color);
+  outline-offset: 3px;
 }
 
 .catalog-painters__link.catalog-painters__link_active {

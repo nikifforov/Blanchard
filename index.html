@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/catalog.css">
   <link rel="stylesheet" href="/css/publication.css">
   <link rel="stylesheet" href="/css/justValidateTooltip.min.css">
+  <script src="/js/graph-modal.min.js"></script>
   <script src="/js/choices.min.js"></script>
   <script src="/js/swiper/swiper.js"></script>
   <script src="/js/simplebar.js"></script>
@@ -21,6 +22,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=23d66a73-97a7-427b-af79-1de2b9168326"></script>
   <script src="/js/map.js"></script>
   <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/graph-modal.min.css">
   <link rel="stylesheet" href="/css/gallery-slider.css">
   <link rel="stylesheet" href="/css/dropdown.css">
   <link rel="stylesheet" href="/css/catalog.css">
@@ -235,22 +237,22 @@
         </div>
         <div class="image-slider swiper-container">
           <div class="image-slider__wrapper swiper-wrapper">
-            <button class="image-slider__slide swiper-slide">
+            <button class="image-slider__slide swiper-slide" data-graph-path="first">
               <img src="/img/gallary/1.jpg" class="image-slider__image" alt="Картинка">
             </button>
-            <button class="image-slider__slide swiper-slide">
+            <button class="image-slider__slide swiper-slide" data-graph-path="second">
               <img src="/img/gallary/2.jpg" class="image-slider__image" alt="Картинка">
             </button>
-            <button class="image-slider__slide swiper-slide">
+            <button class="image-slider__slide swiper-slide" data-graph-path="third">
               <img src="/img/gallary/3.jpg" class="image-slider__image" alt="Картинка">
             </button>
-            <button class="image-slider__slide swiper-slide">
+            <button class="image-slider__slide swiper-slide" data-graph-path="fourth">
               <img src="/img/gallary/4.jpg" class="image-slider__image" alt="Картинка">
             </button>
-            <button class="image-slider__slide swiper-slide">
+            <button class="image-slider__slide swiper-slide" data-graph-path="fifth">
               <img src="/img/gallary/5.jpg" class="image-slider__image" alt="Картинка">
             </button>
-            <button class="image-slider__slide swiper-slide">
+            <button class="image-slider__slide swiper-slide" data-graph-path="sixth">
               <img src="/img/gallary/6.jpg" class="image-slider__image" alt="Картинка">
             </button>
             <button class="image-slider__slide swiper-slide">
@@ -331,6 +333,86 @@
             <div class="swiper-pagination"></div>
             <div class="image-btn-next swiper-button-next"></div>
           </div>
+        </div>
+        <div class="modal">
+          <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+            <button class="btn-reset modal__close" aria-label="Закрыть модальное окно" data-graph-animation="fadeInUp"></button>
+            <div class="modal-content">
+              <img src="/img/gallary/1.jpg" alt="Картинка">
+              <div class="modal-text">
+                <h3 class="modal-main__title modal-title">Казимир Малевич</h3>
+                <h4 class="modal-subtitle modal-title">“Женщина с граблями”</h4>
+                <p class="modal-years">1931-1932</p>
+                <p class="modal-discription">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание 
+                  в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+              </div>
+            </div>
+          </div> 
+          <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="second">
+            <button class="btn-reset modal__close" aria-label="Закрыть модальное окно" data-graph-animation="fadeInUp"></button>
+            <div class="modal-content">
+              <img src="/img/gallary/2.jpg" alt="Картинка">
+              <div class="modal-text">
+                <h3 class="modal-main__title modal-title">Казимир Малевич</h3>
+                <h4 class="modal-subtitle modal-title">“Женщина с граблями”</h4>
+                <p class="modal-years">1931-1932</p>
+                <p class="modal-discription">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание 
+                  в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+              </div>
+            </div>
+          </div> 
+          <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="third">
+            <button class="btn-reset modal__close" aria-label="Закрыть модальное окно" data-graph-animation="fadeInUp"></button>
+            <div class="modal-content">
+              <img src="/img/gallary/modal/1.jpg" alt="Картинка">
+              <div class="modal-text">
+                <h3 class="modal-main__title modal-title">Казимир Малевич</h3>
+                <h4 class="modal-subtitle modal-title">“Женщина с граблями”</h4>
+                <p class="modal-years">1931-1932</p>
+                <p class="modal-discription">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание 
+                  в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="fourth">
+            <button class="btn-reset modal__close" aria-label="Закрыть модальное окно" data-graph-animation="fadeInUp"></button>
+            <div class="modal-content">
+              <img src="/img/gallary/4.jpg" alt="Картинка">
+              <div class="modal-text">
+                <h3 class="modal-main__title modal-title">Казимир Малевич</h3>
+                <h4 class="modal-subtitle modal-title">“Женщина с граблями”</h4>
+                <p class="modal-years">1931-1932</p>
+                <p class="modal-discription">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание 
+                  в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+              </div>
+            </div>
+          </div> 
+          <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="fifth">
+            <button class="btn-reset modal__close" aria-label="Закрыть модальное окно" data-graph-animation="fadeInUp"></button>
+            <div class="modal-content">
+              <img src="/img/gallary/5.jpg" alt="Картинка">
+              <div class="modal-text">
+                <h3 class="modal-main__title modal-title">Казимир Малевич</h3>
+                <h4 class="modal-subtitle modal-title">“Женщина с граблями”</h4>
+                <p class="modal-years">1931-1932</p>
+                <p class="modal-discription">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание 
+                  в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+              </div>
+            </div>
+          </div> 
+          <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="sixth">
+            <button class="btn-reset modal__close" aria-label="Закрыть модальное окно" data-graph-animation="fadeInUp"></button>
+            <div class="modal-content">
+              <img src="/img/gallary/6.jpg" alt="Картинка">
+              <div class="modal-text">
+                <h3 class="modal-main__title modal-title">Казимир Малевич</h3>
+                <h4 class="modal-subtitle modal-title">“Женщина с граблями”</h4>
+                <p class="modal-years">1931-1932</p>
+                <p class="modal-discription">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание 
+                  в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+              </div>
+            </div>
+          </div>  
         </div>
       </div>
     </section>
