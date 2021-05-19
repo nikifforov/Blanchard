@@ -379,8 +379,8 @@ input[type="search"]::placeholder {
   position: absolute;
   width: 324px;
   height: 80px;
-  margin-top: -30px;
-  margin-left: -286px;
+  margin-top: -28px;
+  margin-left: -284px;
   border: 2px solid rgba(194, 131, 243, 1);
   border-radius: 100px;
 }
@@ -511,7 +511,7 @@ input[type="search"]::placeholder {
 
 
 .footer {
-  padding: 42px 0px;
+  padding: 46px 0px;
   background: #000000;
 }
 

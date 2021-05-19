@@ -33,13 +33,12 @@
 
 .image-slider .swiper-button-prev {
   margin-top: 0px;
-  margin-right: 11px;
+  margin-right: 20px;
   
 }
 
 .image-slider .swiper-button-next {
   margin-top: 0px;
-  margin-left: 10px;
 }
 
 .image-slider .swiper-button-prev::after,
@@ -154,6 +153,7 @@
 }
 
 .image-slider .swiper-pagination-fraction {
+  margin-right: 17px;
   font-size: 16px;
   color: #fff;
 }
