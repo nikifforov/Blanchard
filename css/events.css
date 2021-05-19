@@ -133,13 +133,13 @@
   border: 3px solid rgba(209, 169, 240, 1);
 }
 
-.events-btn:focus::after {
+.events-btn:hover::after {
   content: '';
   position: absolute;
   width: 198px;
   height: 69px;
-  margin-top: -24px;
-  margin-left: -159px;
+  margin-top: -22px;
+  margin-left: -157px;
   border: 2px solid var(--btn-color);
   border-radius: 100px;
 }
