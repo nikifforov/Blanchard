@@ -38,7 +38,7 @@
 }
 
 .projects-discription__link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--hover-color);
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -58,6 +58,11 @@
   font-size: 24px;
   line-height: 32px;
   color: #333333;
+}
+
+.projects-slider__cont {
+  display: flex;
+  align-items: center;
 }
 
 .projects-wrapper{
@@ -106,33 +111,21 @@
   border: 1px solid var(--active-focus-color);
 }
 
-.projects-slider .swiper-button-prev::after,
-.projects-slider .swiper-button-next::after {
+.projects-slider__cont .swiper-button-prev::after,
+.projects-slider__cont .swiper-button-next::after {
   color: #ffffff;
   font-size: 10px;
 }
 
-.projects-slider.swiper-button-prev, 
-.projects-slider.swiper-button-next {
+.projects-slider__cont .swiper-button-prev,
+.projects-slider__cont .swiper-button-next {
+  position: inherit;
+  margin: 0px;
   width: 31px;
   height: 31px;
   background: #666666;
+  border-radius: 50px;
   border: 1px solid #666666;
-  border-radius: 50px;
-}
-
-.projects-slider .swiper-button-next{
-  right: 0px;
-  left: auto;
-}
-
-.projects-slider .swiper-button-prev,
-.projects-slider .swiper-button-next {
-  width: 31px;
-  height: 31px;
-  background: #666666;
-  border: 1px solid rgba(0, 0, 0, 1);
-  border-radius: 50px;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;

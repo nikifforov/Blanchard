@@ -3,8 +3,8 @@ new Swiper('.publication-slider',{
   spaceBetween: 50,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    nextEl: '.publication-slider__next',
+    prevEl: '.publication-slider__prev'
   },
   pagination: {
     el: '.publication-slide-pagination',

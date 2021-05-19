@@ -4,7 +4,7 @@ new Swiper('.projects-slider',{
   slidesPerGroup: 3,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    nextEl: '.projects-btn-next',
+    prevEl: '.projects-btn-prev'
   },
 });

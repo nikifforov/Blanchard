@@ -4,7 +4,11 @@
 }
 
 .events-title {
-  margin-bottom: 20px !important;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: normal;
+  color: #333333;
 }
 
 .events-items {
@@ -29,7 +33,7 @@
   margin-bottom: 11px;
 }
 
-.events-item__span {
+.events-item__about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,6 +48,7 @@
 
 .events-item__place,
 .events-item__data {
+  margin: 0;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -51,10 +56,10 @@
 }
 
 .events-item__description {
-  position:relative;
+  position: relative;
   max-width: 400px;
   min-height: 300px;
-  margin-left: 50px;
+  margin: 0 auto;
 }
 
 .events-item__title {
@@ -69,16 +74,16 @@
 
 .events-item__push {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
 }
 
 .events-item__link {
   font-size: 16px;
   color: #9D5CD0;
-  text-decoration: underline;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  border-bottom: 1px solid var(--hover-color);
 }
 
 .events-item__link:hover {
@@ -91,6 +96,7 @@
 .events-item__link:active {
   font-weight: bold;
   color: var(--active-focus-color);
+  border-color: var(--active-focus-color);
 }
 
 .events-item__link:focus {
