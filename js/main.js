@@ -1,56 +1,63 @@
-window.addEventListener('DOMContentLoaded', function(){
-  document.querySelector('#second-nav__item1').addEventListener('click', function(){
-    document.querySelector('.dropdown-first').classList.toggle('is-active')
-  })
+document.querySelector('#second-nav__btn1').addEventListener('click', function(){
+  document.querySelector('#dropdown-first').classList.toggle('is-active')
+  document.querySelector('#dropdown-second').classList.remove('is-active')
+  document.querySelector('#dropdown-third').classList.remove('is-active')
+  document.querySelector('#dropdown-fourth').classList.remove('is-active')
+  document.querySelector('#dropdown-fifth').classList.remove('is-active')
 })
 
-window.addEventListener('DOMContentLoaded', function(){
-  document.querySelector('#second-nav__item2').addEventListener('click', function(){
-    document.querySelector('.dropdown-second').classList.toggle('is-active2')
-  })
+document.querySelector('#second-nav__btn2').addEventListener('click', function(){
+  document.querySelector('#dropdown-second').classList.toggle('is-active')
+  document.querySelector('#dropdown-first').classList.remove('is-active')
+  document.querySelector('#dropdown-third').classList.remove('is-active')
+  document.querySelector('#dropdown-fourth').classList.remove('is-active')
+  document.querySelector('#dropdown-fifth').classList.remove('is-active')
 })
-
-window.addEventListener('DOMContentLoaded', function(){
-  document.querySelector('#second-nav__item3').addEventListener('click', function(){
-    document.querySelector('.dropdown-third').classList.toggle('is-active3')
+  document.querySelector('#second-nav__btn3').addEventListener('click', function(){
+    document.querySelector('#dropdown-third').classList.toggle('is-active')
+    document.querySelector('#dropdown-first').classList.remove('is-active')
+    document.querySelector('#dropdown-second').classList.remove('is-active')
+    document.querySelector('#dropdown-fourth').classList.remove('is-active')
+    document.querySelector('#dropdown-fifth').classList.remove('is-active')
   })
-})
-
-window.addEventListener('DOMContentLoaded', function(){
-  document.querySelector('#second-nav__item4').addEventListener('click', function(){
-    document.querySelector('.dropdown-fourth').classList.toggle('is-active4')
-  })
-})
-
-window.addEventListener('DOMContentLoaded', function(){
-  document.querySelector('#second-nav__item5').addEventListener('click', function(){
-    document.querySelector('.dropdown-fifth').classList.toggle('is-active5')
-  })
+    document.querySelector('#second-nav__btn4').addEventListener('click', function(){
+      document.querySelector('#dropdown-fourth').classList.toggle('is-active')
+      document.querySelector('#dropdown-first').classList.remove('is-active')
+      document.querySelector('#dropdown-second').classList.remove('is-active')
+      document.querySelector('#dropdown-third').classList.remove('is-active')
+      document.querySelector('#dropdown-fifth').classList.remove('is-active')
+    })
+      document.querySelector('#second-nav__btn5').addEventListener('click', function(){
+        document.querySelector('#dropdown-fifth').classList.toggle('is-active')
+        document.querySelector('#dropdown-first').classList.remove('is-active')
+        document.querySelector('#dropdown-second').classList.remove('is-active')
+        document.querySelector('#dropdown-third').classList.remove('is-active')
+        document.querySelector('#dropdown-fourth').classList.remove('is-active')
 })
 
 document.addEventListener('mouseup', (e) => {
-  if ( !document.querySelector('#second-nav__item1').contains(e.target)) 
+  if ( !document.querySelector('#second-nav__btn1').contains(e.target)) 
   document.querySelector('.dropdown-first').classList.remove('is-active')
 })
 
 document.addEventListener('mouseup', (e) => {
-  if ( !document.querySelector('#second-nav__item2').contains(e.target)) 
-  document.querySelector('.dropdown-second').classList.remove('is-active2')
+  if ( !document.querySelector('#second-nav__btn2').contains(e.target)) 
+  document.querySelector('.dropdown-second').classList.remove('is-active')
 })
 
 document.addEventListener('mouseup', (e) => {
-  if ( !document.querySelector('#second-nav__item3').contains(e.target)) 
-  document.querySelector('.dropdown-third').classList.remove('is-active3')
+  if ( !document.querySelector('#second-nav__btn3').contains(e.target)) 
+  document.querySelector('.dropdown-third').classList.remove('is-active')
 })
 
 document.addEventListener('mouseup', (e) => {
-  if ( !document.querySelector('#second-nav__item4').contains(e.target)) 
-  document.querySelector('.dropdown-fourth').classList.remove('is-active4')
+  if ( !document.querySelector('#second-nav__btn4').contains(e.target)) 
+  document.querySelector('.dropdown-fourth').classList.remove('is-active')
 })
 
 document.addEventListener('mouseup', (e) => {
-  if ( !document.querySelector('#second-nav__item5').contains(e.target)) 
-  document.querySelector('.dropdown-fifth').classList.remove('is-active5')
+  if ( !document.querySelector('#second-nav__btn5').contains(e.target)) 
+  document.querySelector('.dropdown-fifth').classList.remove('is-active')
 })
 
 document.addEventListener("DOMContentLoaded",()=>{
@@ -69,17 +76,3 @@ window.addEventListener('DOMContentLoaded', function(){
 
 
 const modal = new GraphModal();
-
-// document.querySelector('.btn').addEventListener('click', () => {
-// 	new GraphModal().open('second');
-// });
-
-// const modal = new GraphModal({
-// 	isOpen: (modal) => {
-// 		console.log(modal);
-// 		console.log('opened');
-// 	},
-// 	isClose: () => {
-// 		console.log('closed');
-// 	}
-// });
