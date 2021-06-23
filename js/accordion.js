@@ -40,3 +40,21 @@ $(document).ready(function() {
 		$('#block'+num).addClass('catalog-painters-active')
 	});
 });
+
+// $(document).ready(function() {
+// 	$('.catalog-painters__link').click(function() {
+// 		var num = $(this).attr('data-num');
+// 		$('#block'+num).addClass('catalog-painters-active')
+//     location.hash = '#block'+num
+// 	});
+// });
+
+// $(window).resize(function() {
+//   if ( $(window).width() <= 768 ) {
+//     $('.catalog-painters__link').click(function() {
+//       var num = $(this).attr('data-num');
+//       $('#block'+num).addClass('catalog-painters-active')
+//       location.hash = '#block'+num
+//     });
+//   }
+// });

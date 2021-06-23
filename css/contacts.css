@@ -14,13 +14,14 @@
   color: var(--title-color);
 }
 
-
+.contacts-address__mobile {
+  display: none;
+}
 
 .contacts-main {
   max-width: 683px;
-  padding-top: 124px;
+  padding-top: 121px;
   padding-right: 122px;
-  padding-bottom: 120px;
   padding-left: 160px;
   border: 1px solid #CACACA;
 }
@@ -60,7 +61,7 @@
 .contacts-form__input {
   width: 400px;
   padding: 4px 97px 4px 24px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   font-size: 16px;
   line-height: 32px;
   color: #999999;
@@ -129,11 +130,153 @@
 
 .contacts-map {
   width: 1720px;
-  height: 700px;
+  /* height: 700px; */
 }
 
 
 [class*="ground-pane"] {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+}
+
+@media(max-width: 1024px) {
+  .contacts-title {
+    padding-left: 46px;
+  }
+
+  .contacts-main {
+    padding-right: 102px;
+    padding-left: 48px;
+  }
+
+  .contacts-form__input {
+    width: 335px;
+  }
+
+  .contacts-social__title {
+    margin-bottom: 17px;
+  }
+
+  .contacts-social__link:not(:last-child) {
+    margin-right: 29px;
+  }
+
+  .contacts-social__icon {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+@media(max-width: 768px) {
+  .contacts-main {
+    padding-right: 45px;
+  }
+
+  .contacts-main__address {
+    margin-bottom: 35px;
+  }
+}
+
+@media(max-width: 576px) {
+
+  .contacts-container {
+    flex-direction: column-reverse;
+  }
+
+  .contacts-title {
+    padding-left: 15px;
+  }
+
+  .contacts-address__mobile {
+    display: block;
+    padding-left: 15px;
+  }
+
+  .contacts-main .contacts-main__title,
+  .contacts-main .contacts-main__address {
+    display: none;
+  }
+
+  .contacts-map {
+    width: 100%;
+  }
+
+  .contacts-main {
+    padding: 15px;
+  }
+
+  .contacts-form__input {
+    width: 100%;
+  }
+}
+
+@media(max-width: 320px) {
+
+  .contacts {
+    padding-bottom: 12px;
+  }
+
+  .contacts-title {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .contacts-main__title_mobile {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .contacts-main__address {
+    margin-bottom: 15px;
+  }
+
+  .contacts-map {
+    height: 320px;
+  }
+
+  .ymaps-2-1-78-map {
+    height: 320px;
+  }
+
+  .contacts-main {
+    padding-top: 20px;
+    border: none;
+  }
+
+  .contacts-form {
+    margin-bottom: 20px;
+  }
+
+  .contacts-form__label {
+    margin-bottom: 16px;
+  }
+
+  .contacts-form__label {
+    font-size: 18px;
+  }
+
+  .contacts-form__input {
+    margin-bottom: 19px;
+  }
+
+  .contacts-form__btn {
+    width: 127px;
+    height: 39px;
+    font-size: 12px;
+  }
+
+  .contacts-social__title {
+    margin-bottom: 7px;
+    font-size: 18px;
+  }
+
+  .contacts-social__link:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .contacts-social__icon {
+    width: 50px;
+    height: 50px;
+  }
 }

@@ -35,6 +35,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-
-// Добавить чтобы при смене языка первый художник был выделен

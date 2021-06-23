@@ -20,18 +20,13 @@
 }
 
 .publication-categories {
-  max-width: 277px;
-  margin-right: 173px;
+  /* width: 67.8%; */
+  width: 57%;
 }
 
 .publication-categories__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-bottom: 49px;
 }
 
@@ -44,12 +39,8 @@
 }
 
 .publication-categories__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -205,25 +196,33 @@ input[type="number"]::-moz-placeholder {
  input[type="number"]::-ms-input-placeholder { color: #ffffff; }
  input[type="number"]::placeholder { color: #ffffff; } 
 
+
+ .publication-card {
+   display: none;
+ }
+
 .publication-slider {
-  padding-top: 93px;
+  max-width: 1150px;
+  margin: 0;
+  padding-top: 94px;
   padding-bottom: 5px;
 } 
+/* 
+.publication-slide.swiper-slide {
+  width: 350px;
+  max-width: 350px;
+}  */
 
 .publication-slide__img {
+  width: 100%;
+  height: auto;
   margin-bottom: 20px;
 }
 
 .publication-slide__discription {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-between;
   margin-bottom: 15px;
 }
 
@@ -336,3 +335,197 @@ input[type="number"]::-moz-placeholder {
   font-size: 16px;
   color: #ffffff;
 }
+
+@media(max-width: 1366px) {
+
+  .publication-categories {
+    width: 34%;
+  }
+
+  .publication-slider {
+    max-width: 737px;
+  }
+}
+
+
+@media(max-width: 1024px) {
+
+  .publication {
+    padding-bottom: 79px;
+  } 
+
+  .publication-slider {
+    max-width: 630px;
+  }
+
+  .publication-slide.swiper-slide  {
+    width: 290px;
+    max-width: 290px;
+  }
+
+  .publication-slide__img {
+    width: 100%;
+    margin-bottom: 7px;
+  }
+}
+
+
+@media(max-width: 768px) {
+
+  .publication {
+    padding-top: 84px;
+    padding-bottom: 76px;
+  }
+
+  .publication-container {
+    flex-direction: column;
+  }
+
+  .publication-categories {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+
+  .publication-categories__items {
+    max-height: 130px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    align-content: space-between;
+  } 
+
+  .publication-slider {
+    max-width: 700px;
+  }
+
+  .publication-wrapper {
+    margin-left: 27px;
+  }
+
+}
+
+@media(max-width: 576px) {
+
+  .publication-categories__title {
+    border-top: 1px solid #CACACA;
+  }
+
+  .publication-categories__items {
+    display: none;
+    transition: height .3s;
+  }
+
+  .categories__items_active {
+    display: flex;
+    flex-direction: column;
+    transition: height .3s;
+  }
+
+  .publication-categories__title,
+  .publication-categories__item {
+    margin: 0;
+    padding: 10px 0px;
+    border-bottom: 1px solid #CACACA;
+  }
+
+  .publication-categories__item:not(:last-child) {
+    margin: 0;
+  }
+
+  .publication-categories__items {
+    max-height: none;
+    flex-wrap: nowrap;
+  }
+
+  .publication-slider {
+    display: none;
+  }
+
+  .publication-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .publication-slide {
+    width: 47%;
+    margin-bottom: 50px;
+  }
+
+  .publication-slide__discription {
+    display: block;
+  }
+
+  .publication-slide__btn {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .publication-slide__book,
+  .publication-slide__name,
+  .publication-slide__price {
+    font-size: 12px;
+  }
+
+  /* .categories__items_active .publication-categories__item[data-checked="false"] {
+    display: none;
+  } */
+
+  .categories__items_active .publication-categories__item[data-checked="true"] {
+    display: block;
+  }
+
+  .publication-categories__items .publication-categories__item[ data-checked="true"] {
+    display: block;
+  }
+}
+
+@media(max-width: 320px) {
+
+  .publication {
+    padding-top: 49px;
+    padding-bottom: 4px;
+  }
+
+  .publication-title {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .publication-categories {
+    margin-bottom: 48px;
+  }
+
+  .publication-categories__items {
+    margin-bottom: 18px;
+  }
+
+  .publication-price__title {
+    margin-bottom: 14px;
+  }
+
+  .publication-slide {
+    width: 45%;
+  }
+
+  .publication-slide__img {
+    margin-bottom: 5px;
+  }
+
+  .publication-slide__discription {
+    margin-bottom: 12px;
+  }
+
+  .publication-slide__book, 
+  .publication-slide__name, 
+  .publication-slide__price {
+    line-height: 15px;
+  }
+
+  .publication-slide__text {
+    margin-bottom: 3px;
+  }
+}
+
+
+
