@@ -45,23 +45,23 @@
 }
 
 .language-btn_fr {
-  background-image: url(/img/catalog/flags/frn.png);
+  background-image: url(../img/catalog/flags/frn.png);
 }
 
 .language-btn_ger {
-  background-image: url(/img/catalog/flags/ger.png);
+  background-image: url(../img/catalog/flags/ger.png);
 }
 
 .language-btn_it {
-  background-image: url(/img/catalog/flags/ita.png);
+  background-image: url(../img/catalog/flags/ita.png);
 }
 
 .language-btn_ru {
-  background-image: url(/img/catalog/flags/rus.png);
+  background-image: url(../img/catalog/flags/rus.png);
 }
 
 .language-btn_bg {
-  background-image: url(/img/catalog/flags/bg.png);
+  background-image: url(../img/catalog/flags/bg.png);
 }
 
 .language-btn:hover {

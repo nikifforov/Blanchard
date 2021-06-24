@@ -1,7 +1,7 @@
 .gallery {
   padding-top: 80px;
   padding-bottom: 70px;
-  background-image: url(/img/gallary/background.jpg);
+  background-image: url(../img/gallary/background.jpg);
 }
 
 .gallery-container {
