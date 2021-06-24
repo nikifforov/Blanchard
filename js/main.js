@@ -89,12 +89,6 @@ document.querySelector('.publication-categories__title').addEventListener('click
 })
 
 
-
-var b = document.querySelector(".publication-categories__item");
-
-b.setAttribute("data-checked", "false");
-
-
 document.querySelector('.search-btn').addEventListener('click', function(){
   if (window.innerWidth <= 576) {
     document.querySelector('.first-header__form_mobile').classList.toggle('form-mobile__active')
@@ -113,7 +107,8 @@ document.querySelector('.search-btn__close').addEventListener('click', function(
 })
 
 
-// var x = document.querySelector(".publication-categories__item");
+// var x = document.querySelectorAll(".publication-categories__item");
+
 
 // x.addEventListener('click', function() {
 //   if (x.hasAttribute("data-checked", false)) {
@@ -124,3 +119,42 @@ document.querySelector('.search-btn__close').addEventListener('click', function(
 // })
     
 
+// const x = document.querySelectorAll('.publication-categories__item');
+
+// x.forEach( element => {
+//   element.setAttribute("data-checked", false)
+// })
+
+// x.addEventListener('click', function() {
+//   if (x.hasAttribute("data-checked", false)) {
+//     x.setAttribute("data-checked", true);
+//   }
+// })
+
+
+// function pci () {
+//   const x = document.querySelectorAll('.publication-categories__item');
+
+//   for (let i = 0; i < x.attribute.length; i++) {
+//     if (x.hasAttribute("data-checked", false)) {
+//       x.setAttribute(("data-checked", true))
+//     } else (x.setAttribute("data-checked", false))
+//   }
+// }
+
+
+const x = document.querySelector('.publication-categories__item');
+const y = x.getAttribute('data-checked')
+
+console.log(y)
+
+for (i = 0; i < y; i++) {
+  console.log(y)
+  if (y === false) {
+    x.setAttribute('data-checked', true)
+  } else {
+    x.setAttribute('data-checked', false)
+  }
+}
+
+console.log(x.getAttribute('data-checked'))

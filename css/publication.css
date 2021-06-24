@@ -471,11 +471,11 @@ input[type="number"]::-moz-placeholder {
   } */
 
   .categories__items_active .publication-categories__item[data-checked="true"] {
-    display: block;
+    display: flex;
   }
 
   .publication-categories__items .publication-categories__item[ data-checked="true"] {
-    display: block;
+    display: flex;
   }
 }
 
