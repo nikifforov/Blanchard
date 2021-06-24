@@ -23,8 +23,9 @@
   padding-top: 121px;
   padding-right: 122px;
   padding-left: 160px;
-  padding-bottom: 121px;
+  padding-bottom: 122px;
   border: 1px solid #CACACA;
+  border-bottom: none;
 }
 
 .contacts-main__title {
@@ -163,6 +164,11 @@
 .contacts-map {
   width: 1720px;
   /* height: 700px; */
+}
+
+
+.ymaps-2-1-78-map {
+  height: 700px;
 }
 
 
