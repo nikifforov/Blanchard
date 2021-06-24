@@ -78,8 +78,15 @@
   height: 46px;
   top: 0px;
   left: 0px;
-  border: 2px solid var(--hover-color);
+  border: 2px solid var(--active-focus-color);
   border-radius: 50px;
+}
+
+.language-btn:focus {
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+          filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+  border-radius: 29px;
+  outline: none;
 }
 
 .active-btn::after {
@@ -89,7 +96,7 @@
   height: 66px;
   margin-top: -33px;
   margin-left: -33px;
-  border: 2px solid  var(--hover-color);
+  border: 2px solid  var(--active-focus-color);
   border-radius: 100px;
 }
 
@@ -156,14 +163,20 @@
   margin: 0;
 }
 
-/* .catalog-painters__header 
-.ui-state-default, 
-.ui-widget-content 
-.ui-state-default  {
-  padding: 0;
-  background: none;
-  border: none;
-} */
+.catalog-painters__header:focus-visible {
+outline: none;
+}
+
+.catalog-painters__item:focus-visible .catalog-painters__years {
+  outline: none;
+  color: #fff;
+  background-color: var(--hover-color);
+}
+
+.catalog-painters__item:focus-visible .catalog-painters__icon {
+  outline: none;
+  color: #D1A9F0;
+}
 
 .catalog-painters__item {
 display: flex;
@@ -174,8 +187,8 @@ min-height: 100%;
 
 .catalog-painters__item:focus-visible {
   outline: none;
-  outline-offset: 6px;
-  outline: 2px solid var(--active-focus-color);
+  /* outline-offset: 6px;
+  outline: 2px solid var(--active-focus-color); */
 }
 
 .catalog-painters__years {
@@ -281,8 +294,10 @@ min-height: 100%;
 
 .catalog-painters__link:focus-visible {
   outline: none;
-  outline: 2px solid var(--active-focus-color);
-  outline-offset: 2px;
+  /* outline: 2px solid var(--active-focus-color);
+  outline-offset: 2px; */
+  background-color: var(--hover-color);
+  color: #fff;
 }
 
 .catalog-painters {

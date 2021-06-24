@@ -143,18 +143,56 @@ document.querySelector('.search-btn__close').addEventListener('click', function(
 // }
 
 
-const x = document.querySelector('.publication-categories__item');
-const y = x.getAttribute('data-checked')
+// const x = document.querySelector('.publication-categories__item');
+// const y = x.getAttribute('data-checked')
 
-console.log(y)
+// console.log(y)
 
-for (i = 0; i < y; i++) {
-  console.log(y)
-  if (y === false) {
-    x.setAttribute('data-checked', true)
-  } else {
-    x.setAttribute('data-checked', false)
-  }
+// for (i = 0; i < y; i++) {
+//   console.log(y)
+//   if (y === false) {
+//     x.setAttribute('data-checked', true)
+//   } else {
+//     x.setAttribute('data-checked', false)
+//   }
+// }
+
+// console.log(x.getAttribute('data-checked'))
+
+const categoriesCheackBoxes = document.querySelector('.publication-categories__items');
+
+function optimizeCheckbox() {
+  if (document.documentElement.clientWidth <= 576 && !document.querySelector('.publication-categories__title')) {
+
+    let button = document.createElement('button');
+    button.classList.add('publication-categories__title');
+
+    button.addEventListener('click', (ev) => {
+      ev.target.classList.toggle('btn-show-categories-active');
+      categoriesCheackBoxes.classList.toggle('.categories__items_active');
+    });
+
+    document.querySelector('.publication-categories__title').append(button);
+
+    let inputs = document.querySelectorAll('.publication-categories__check');
+    inputs.forEach((input) => {
+      if (input.checked == true) {
+        input.parentElement.classList.add('categories__items_active');
+      }
+    })
+
+    let checkboxWrapper = document.querySelectorAll('.publication-categories__item');
+
+    checkboxWrapper.forEach((wrapper) => {
+      wrapper.addEventListener('click', function (ev) {
+        if (this.children[0].checked == true) {
+          this.classList.add('categories__items_active');
+        } else {
+          this.classList.remove('categories__items_active');
+        }
+      })
+    })
+  } else if (document.querySelector('.btn-show-categories')) {
+    document.querySelector('.btn-show-categories').remove();
+  };
 }
-
-console.log(x.getAttribute('data-checked'))

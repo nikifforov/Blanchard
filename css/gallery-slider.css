@@ -75,7 +75,9 @@
 }
 
 .gallary-text__link:focus-visible {
-  outline:1px solid var(--active-focus-color);
+  color: #fff;
+  background-color: var(--active-focus-color);
+  /* outline:1px solid var(--active-focus-color); */
 }
 
 .choices  {
@@ -102,6 +104,10 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.choices__inner:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .choices__list--dropdown {
   border: 1px solid #FFFFFF;
   -webkit-box-sizing: border-box;
@@ -125,18 +131,14 @@
   border-right: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
   top: 37%;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .choices[data-type*=select-one].is-open::after {
   margin-top: 0px;
   top: 50%;
   border-color: #ffffff;
-  -webkit-transform: rotate(225deg);
-      -ms-transform: rotate(225deg);
-          transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 
 .image-slider.swiper-container {
@@ -254,13 +256,13 @@
 .swiper-button-prev:active,
 .swiper-button-next:active {
   background: var(--active-focus-color);
-  border: 2px solid rgba(209, 169, 240, 1);
+  border: 2px solid #000;
 } 
 
 .swiper-button-prev:focus,
 .swiper-button-next:focus {
   outline: none;
-  border: 2px solid var(--active-focus-color);
+  border: 2px solid #000;
 } 
 
 .image-slider .swiper-pagination {

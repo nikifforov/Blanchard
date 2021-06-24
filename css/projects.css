@@ -29,7 +29,10 @@
 }
 
 .projects-discription__link:focus-visible {
-  outline: 2px solid var(--active-focus-color);
+  /* outline: 2px solid var(--active-focus-color); */
+  outline: none;
+  color: #ffffff;
+  background-color: var(--active-focus-color);
 }
 
 .projects-discription__link::after {
@@ -122,7 +125,7 @@
 .swiper-button-prev:active,
 .swiper-button-next:active {
   background: var(--active-focus-color);
-  border: 2px solid rgba(209, 169, 240, 1);
+  border: 2px solid #000;
 } 
 
 .swiper-button-prev:focus-visible,
@@ -141,7 +144,7 @@
   line-height: 16px;
   text-align: center;
   color: #FFFFFF;
-  background: #CACACA;
+  background: var(--active-focus-color);
 }
 
 .ui-tooltip-content::before {
@@ -153,7 +156,7 @@
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #CACACA;
+  border-top: 6px solid var(--active-focus-color);
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);

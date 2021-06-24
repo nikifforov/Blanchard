@@ -504,7 +504,11 @@
 }
 
 .events-item__link:focus-visible {
-  border: 2px solid var(--active-focus-color);
+  outline: none;
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: var(--active-focus-color);
+  /* border: 2px solid var(--active-focus-color); */
 }
 
 .events-btn {

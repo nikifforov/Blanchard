@@ -108,7 +108,9 @@
 }
 
 .second-nav__link:focus-visible {
-  outline: 2px solid var(--active-focus-color);
+  background-color: var(--active-focus-color);
+  outline: none;
+  /* outline: 2px solid var(--active-focus-color);*/
 }
 
 .second-nav__link:active

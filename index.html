@@ -256,9 +256,9 @@
           <p class="gallery-title__text">Фильтровать по:</p>
           <div class="gallary-select">
             <select class="select" name="select" id="selectCustom">
-              <option value="">Автор</option>
-              <option value="">Направление</option>
-              <option value="">Техника</option>
+              <option value="">Живопись</option>
+              <option value="">Рисунок</option>
+              <option value="">Скульптура</option>
             </select>
             <script src="js/gallery-select.js"></script>
           </div>
@@ -2813,68 +2813,68 @@
         <div class="publication-categories">
           <h2 class="publication-title">Издания</h2>
           <h4 class="publication-categories__title">Категории</h4>
-          <div class="publication-categories__items">
-            <label class="publication-categories__item" data-checked="false">
+          <form class="publication-categories__items">
+            <label class="publication-categories__item">
               <input type="checkbox" required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Бестселлеры</span>
             </label>
-            <label class="publication-categories__item" data-checked="false">
+            <label class="publication-categories__item">
               <input type="checkbox" required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Искусство</span>
             </label>
-            <label class="publication-categories__item" data-checked="false">
+            <label class="publication-categories__item">
               <input type="checkbox" required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Архитектура</span>
             </label>
-            <label class="publication-categories__item" data-checked="false">
+            <label class="publication-categories__item">
               <input type="checkbox" checked required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Дизайн</span>
             </label>
-            <label class="publication-categories__item" data-checked="false">
+            <label class="publication-categories__item">
               <input type="checkbox" required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Мода</span>
             </label>
-            <label class="publication-categories__item" data-checked="false">
+            <label class="publication-categories__item">
               <input type="checkbox" required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Детям</span>
             </label>
-            <label class="publication-categories__item" data-checked="false">
+            <label class="publication-categories__item">
               <input type="checkbox" required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Художественная литература</span>
             </label>
-            <label class="publication-categories__item" data-checked="false">
+            <label class="publication-categories__item">
               <input type="checkbox" required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Публицистика</span>
             </label>
-            <label class="publication-categories__item" data-checked="false">
+            <label class="publication-categories__item">
               <input type="checkbox" required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Путеводители</span>
             </label>
-            <label class="publication-categories__item" data-checked="false">
+            <label class="publication-categories__item">
               <input type="checkbox" required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Философия</span>
             </label>
-            <label class="publication-categories__item" data-checked="false">
+            <label class="publication-categories__item">
               <input type="checkbox" required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Учебная литература</span>
             </label>
-            <label class="publication-categories__item" data-checked="false">
+            <label class="publication-categories__item">
               <input type="checkbox" required class="publication-categories__check">
               <span class="publication-categories__fake"></span>
               <span class="publication-categories__text">Журналы и газеты</span>
             </label>
-          </div>
+          </form>
           <div class="publication-price">
             <h4 class="publication-price__title">Цена</h4>
             <div class="publication-price__items">
@@ -3119,14 +3119,14 @@
         <div class="contacts-main">
           <h3 class="contacts-main__title">Шоурум №2</h3>
           <address class="contacts-main__address">Леонтьевский переулок, дом 5, строение 1</address>
-          <form class="contacts-form form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
+          <form class="contacts-form form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" novalidate="novalidate">
             <label class="contacts-form__label">Заказать обратный звонок</label>
             <input class="contacts-form__input input" 
               type="text"
               name="Name"
+              minlength="2"
               placeholder="Имя*"
               data-validate-field="name"
-            
             >
             <input class="contacts-form__input input"
               name="Telephone"  
@@ -3134,7 +3134,6 @@
               placeholder="Телефон*"
               data-validate-field="tel"
               data-validate-rules="phone"
-            
             >
             <button class="contacts-form__btn btn" type="submit">Заказать</button>
           </form>

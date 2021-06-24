@@ -118,8 +118,17 @@
 }
 
 .publication-categories__item:focus-visible {
-  outline: 1px solid var(--active-focus-color);
-  outline-offset: 3px;
+  outline: none;
+  /* outline: 1px solid var(--active-focus-color);
+  outline-offset: 3px; */
+}
+
+.publication-categories__item:focus-visible  .publication-categories__text{
+  color: var(--checkbox-color);
+}
+
+.publication-categories__item:focus-visible .publication-categories__fake {
+  border-color: var(--checkbox-color);
 }
 
 .publication-categories__text {
@@ -180,6 +189,20 @@ input[type="number"] {
 input[type="number"]:hover,
 input[type="number"]:focus {
   -moz-appearance: number-input;
+}
+
+input[type="number"]:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+input[type="number"]:active {
+  background-color: var(--active-focus-color);
+}
+
+input[type="number"]:focus {
+  background-color: var(--hover-color);
+  border: 1px solid #FFFFFF;
 }
 
 input[type=number]::-webkit-inner-spin-button,
