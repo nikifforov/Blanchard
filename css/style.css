@@ -343,11 +343,11 @@ input[type="search"]::placeholder {
 }
 
 .hero-slider__slide:nth-child(2) {
-  background-image: url(img/hero/2.jpg);
+  background-image: url(/img/hero/2.jpg);
 }
 
 .hero-slider__slide:last-child {
-  background-image: url(img/hero/3.jpg);
+  background-image: url(/img/hero/3.jpg);
 }
 /* 
 .hero-discription {
