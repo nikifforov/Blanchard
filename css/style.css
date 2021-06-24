@@ -123,8 +123,8 @@ input {
   -ms-flex-align: center;
   align-items: center;
   justify-content: space-between;
-  padding-top: 28px;
-  padding-bottom: 29px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .burder {
@@ -430,7 +430,7 @@ input[type="search"]::placeholder {
 
 
 .footer {
-  padding: 44px 0px;
+  padding: 47px 0px;
   background: #000000;
 }
 

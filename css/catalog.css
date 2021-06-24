@@ -15,6 +15,7 @@
 }
 
 .catalog-title {
+  margin: 0;
   margin-right: 41px;
   font-size: 48px;
   font-weight: normal;
