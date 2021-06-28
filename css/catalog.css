@@ -119,11 +119,29 @@
 
 .catalog-painters__container {
   display: none;
+  opacity: 0;
 }
 
 .catalog-painters__container-active {
   display: flex;
   justify-content: space-between;
+  animation: catalogPainterContainerActive .3s linear forwards;
+}
+
+@keyframes catalogPainterContainerActive {
+
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 
 .catalog-language__description {
@@ -324,11 +342,29 @@ min-height: 100%;
 
 .catalog-painters {
   display: none;
+  opacity: 0;
   max-width: 750px;
 }
 
 .catalog-painters-active{
   display: block;
+  animation: catalogPainterActive .3s linear forwards;
+}
+
+@keyframes catalogPainterActive {
+
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 
 .catalog-painters__years, 

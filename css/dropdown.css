@@ -93,6 +93,7 @@
 }
 
 .second-nav__link:hover {
+  cursor: pointer;
   color: var(--hover-color);
 }
 

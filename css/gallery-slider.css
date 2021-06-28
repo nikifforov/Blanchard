@@ -175,6 +175,7 @@
   border: none;
   height: auto;
   max-height: 350px;
+  cursor: pointer;
 }
 
 .image-slider__slide::after {
