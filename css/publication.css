@@ -277,9 +277,9 @@ input[type="number"]::-moz-placeholder {
 .publication-slide__btn:focus-visible::after {
   content: '';
   position: absolute;
-  width: 128px;
-  height: 49px;
-  bottom: -5px;
+  width: 129px;
+  height: 50px;
+  bottom: 2px;
   left: 1px;
   margin-left: -5px;
   border: 2px solid #C283F3;
