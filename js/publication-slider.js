@@ -16,7 +16,7 @@ new Swiper('.publication-slider',{
     },
     321: {
       slidesPerView: 2,
-      spaceBetween: 50,
+      spaceBetween: 34,
     }
   },
 

@@ -3,10 +3,10 @@
     languageBtn.addEventListener('click', function(event) {
       const path = event.currentTarget.dataset.path
 
-      document.querySelectorAll('.catalog-mian').forEach(function(catalogMain) {
-        catalogMain.classList.remove('catalog-mian-active')
+      document.querySelectorAll('.catalog-painters__container').forEach(function(catalogMain) {
+        catalogMain.classList.remove('catalog-painters__container-active')
       })
-      document.querySelector(`[data-target="${path}"]`).classList.add('catalog-mian-active')
+      document.querySelector(`[data-target="${path}"]`).classList.add('catalog-painters__container-active')
 
       document.querySelectorAll('.language-btn').forEach(function(removeActive) {
         removeActive.classList.remove('active-btn')
