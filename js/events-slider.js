@@ -1,8 +1,34 @@
-const swiper = new Swiper('.events-slider', {
-  slidesPerView: 1,
-  spaceBetween: 15,
+const slider = document.querySelector('.events-cards');
 
-  pagination: {
-    el: '.swiper-pagination',
-  },
+let eventsSlider;
+
+function mobileEventsSlider() {
+  if (window.innerWidth <= 576 && slider.dataset.mobile == 'false') {
+    eventsSlider = new Swiper (slider, {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      slideClass: 'events-item',
+      wrapperClass: 'events-items',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      }
+    });
+
+    slider.dataset.mobile = 'true';
+  }
+
+  if (window.innerWidth > 576) {
+    slider.dataset.mobile = 'false';
+     
+    if (slider.classList.contains('swiper-container-initialized')) {
+      eventsSlider.destroy()
+    }
+  }
+}
+
+mobileEventsSlider();
+
+window.addEventListener('resize', () => {
+  mobileEventsSlider();
 });

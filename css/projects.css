@@ -26,13 +26,23 @@
   position: relative;
   font-weight: 600;
   color: var(--hover-color);
+  z-index: 1;
 }
 
 .projects-discription__link:focus-visible {
   outline: none;
   color: #ffffff;
-  padding: 2px 6px;
-  background: var(--hover-color);
+}
+
+.projects-discription__link:focus-visible::before {
+  content: '';
+  position: absolute;
+  width: calc(100% + 12px);
+  height: calc(100% + 4px);
+  top: -2px;
+  left: -6px;
+  background-color: var(--hover-color);
+  z-index: -1;
 }
 
 .projects-discription__link::after {
@@ -84,70 +94,94 @@
   max-width: 450px;
   height: 150px;
   margin-right: 50px;
+  outline: none;
   border: 1px solid #CACACA;;
 }
 
 .projects-slide {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
   transition: .2s linear;
 }
 
 .projects-slide:hover {
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  border: 1px solid var(--active-focus-color);
+  border: 1px solid var(--hover-color);
 }
 
 .projects-slide:focus-visible {
-  border-color: var(--hover-color);
+  border: 1px solid var(--hover-color);
+}
+.projects-slide__img {
+  filter: grayscale(100%);
+}
+
+.projects-slide:hover .projects-slide__img {
+  filter: grayscale(0%);
 }
 
 .projects-slider__cont .swiper-button-prev::after,
 .projects-slider__cont .swiper-button-next::after {
-  color: #ffffff;
-  font-size: 10px;
+  color: #000;
+  font-size: 12px;
 }
 
 .projects-slider__cont .swiper-button-prev,
 .projects-slider__cont .swiper-button-next {
   position: inherit;
   margin: 0px;
-  width: 31px;
-  height: 31px;
-  background: #666666;
+  width: 30px;
+  height: 30px;
+  background: #ECECEC;
   border-radius: 50px;
-  border: 1px solid #666666;
+  border: 1px solid #ECECEC;
   transition: .2s linear;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background: var(--hover-color);
+.projects-slider__cont .swiper-button-prev:hover,
+.projects-slider__cont .swiper-button-next:hover {
+  background: #D1A9F0;
 } 
 
-.swiper-button-prev:active,
-.swiper-button-next:active {
-  background: var(--active-focus-color);
-  border: 2px solid #000;
+.projects-btn-prev.swiper-button-prev:active,
+.projects-btn-next.swiper-button-next:active {
+  background: #D1A9F0;
+  border: 2px solid var(--hover-color);
 } 
 
 .swiper-button-prev:focus-visible,
 .swiper-button-next:focus-visible {
   outline: none;
-  border: 2px solid var(--active-focus-color);
+  border: 2px solid var(--hover-color);
 }
 
 .projects-text__tooltip {
+  outline: none;
   cursor: pointer;
 }
 
-.projects-text__tooltip:hover svg {
-  fill: var(--hover-color);
+.projects-text__tooltip:hover svg,
+.projects-text__tooltip:focus-visible svg {
+  fill:#D1A9F0;
+  transition: fill .2s;
 }
 
-.projects-text__tooltip:hover svg path:last-child {
+.projects-text__tooltip:hover svg path:last-child,
+.projects-text__tooltip:focus-visible svg path:last-child {
   fill: #ffffff;
+  transition: fill .1s;
+}
+
+.projects-text__tooltip:active svg {
+  fill: var(--hover-color);
+  transition: fill .2s;
+}
+
+.projects-text__tooltip:active svg path:last-child {
+  fill: #ffffff;
+  transition: fill .1s;
+}
+
+.projects-text__tooltip:active svg path:first-child {
+  fill: var(--hover-color);
+  transition: fill .1s;
 }
 
 

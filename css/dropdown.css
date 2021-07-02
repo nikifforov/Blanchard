@@ -92,6 +92,10 @@
   width: 2px;
 }
 
+.second-nav__link {
+  outline: none;
+}
+
 .second-nav__link:hover {
   cursor: pointer;
   color: var(--hover-color);
@@ -101,10 +105,15 @@
   color: var(--active-focus-color);
 }
 
-.second-nav__link:focus-visible {
-  padding: 2px 6px;
-  background: var(--active-focus-color);
-  outline: none;
+.second-nav__link:focus-visible::before {
+  content: '';
+  position: absolute;
+  width: calc(100% + 12px);
+  height: calc(100% + 4px);
+  top: -2px;
+  left: -6px;
+  background-color: var(--active-focus-color);
+  z-index: -1;
 }
 
 .second-nav__link:active

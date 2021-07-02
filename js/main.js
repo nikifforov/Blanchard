@@ -84,9 +84,9 @@ const modal = new GraphModal();
 
 
 
-document.querySelector('.publication-categories__title').addEventListener('click', function(){
-  document.querySelector('.publication-categories__items').classList.toggle('categories__items_active')
-})
+// document.querySelector('.publication-categories__title').addEventListener('click', function(){
+//   document.querySelector('.publication-categories__items').classList.toggle('categories__items_active')
+// })
 
 
 document.querySelector('.search-btn').addEventListener('click', function(){
@@ -174,14 +174,14 @@ document.querySelector('.search-btn__close').addEventListener('click', function(
 
 //     document.querySelector('.publication-categories__title').append(button);
 
-//     let inputs = document.querySelectorAll('.publication-categories__check');
+//     let inputs = document.querySelectorAll('.publication-categories__item');
 //     inputs.forEach((input) => {
 //       if (input.checked == true) {
 //         input.parentElement.classList.add('categories__items_active');
 //       }
 //     })
 
-//     let checkboxWrapper = document.querySelectorAll('.publication-categories__item');
+//     let checkboxWrapper = document.querySelectorAll('.publication-categories__input');
 
 //     checkboxWrapper.forEach((wrapper) => {
 //       wrapper.addEventListener('click', function (ev) {
@@ -195,4 +195,41 @@ document.querySelector('.search-btn__close').addEventListener('click', function(
 //   } else if (document.querySelector('.btn-show-categories')) {
 //     document.querySelector('.btn-show-categories').remove();
 //   };
-// }
+// };
+// optimizeCheckbox();
+
+const publicationBtn = document.querySelector('.publication-categories__title');
+const publicationFormItem = document.querySelectorAll('.publication-categories__item');
+const publicationFormInput = document.querySelectorAll('.publication-categories__input');
+const publicationBtnArrow = document.querySelector('.publication-categories__title-arrow');
+
+const showActiveCheckbox = () => {
+  publicationFormInput.forEach(el => {
+    if (el.checked) {
+      el.parentNode.classList.add('categories__items_active')
+    }
+  })
+}
+
+const publicationAccordion = () => {
+  publicationBtn.addEventListener('click', () => {
+    publicationBtnArrow.classList.toggle('arrow-active');
+    publicationFormItem.forEach(el => {
+      el.classList.toggle('categories__items_active')
+      showActiveCheckbox();
+    })
+  })
+}
+
+const publicationCheck = () => {
+  for (let i = 0; i < publicationFormInput.length; i++) {
+    const el = publicationFormInput[i];
+    el.addEventListener('change', () => {
+      el.parentNode.classList.toggle('categories__items_active');
+      showActiveCheckbox();
+    })
+  }
+  showActiveCheckbox();
+}
+publicationAccordion();
+publicationCheck();
