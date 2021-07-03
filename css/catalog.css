@@ -203,6 +203,7 @@ outline: none;
   outline: none;
   color: #fff;
   background-color: var(--hover-color);
+  transition: outline .1s linear;
 }
 
 .catalog-painters__item:focus-visible .catalog-painters__icon {
@@ -242,7 +243,6 @@ min-height: 100%;
   line-height: 32px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #CACACA;
-  transition: all .2s;
 }
 
 .ui-accordion-header:first-child {
@@ -252,31 +252,35 @@ min-height: 100%;
 .ui-accordion-header:hover {
   border-top: 1px solid var(--hover-color);
   border-bottom: 1px solid var(--hover-color);
+  transition: border .2s linear;
 }
 
 .ui-accordion-header:active{
   border-color: var(--active-focus-color);
+  transition: border .2s linear;
 }
 
 .ui-accordion-header:first-child.ui-accordion-header-active, 
 .ui-accordion-header-active {
   border-top: 1px solid var(--hover-color);
   border-bottom: 1px solid var(--hover-color);
+  transition: border .2s linear;
 }
 
 .ui-accordion-header-active + .ui-accordion-content-active {
-  border-bottom: 1px solid #CACACA
+  border-bottom: 1px solid #CACACA;
+  transition: border .2s linear;
 }
 
 .ui-accordion-header:focus-visible .catalog-painters__years {
   color: #fff;
   background-color: var(--hover-color);
-  transition: all .2s;
+  transition: color .2s linear;
 }
 
 .ui-accordion-header:focus-visible .catalog-painters__icon {
   color: #D1A9F0;
-  transition: all .2s;
+  transition: color .2s linear;
 }
 
 .ui-accordion-header-icon, 
@@ -302,6 +306,9 @@ min-height: 100%;
   background: none;
   border: none;
 }
+.catalog-painters__link.catalog-painters__link_active {
+  color: var(--hover-color);
+}
 
 .catalog-painters__link:hover {
   color: var(--hover-color);
@@ -316,26 +323,26 @@ min-height: 100%;
   bottom: -4px;
   left: 0;
   background: var(--hover-color);
-  transition: .2s linear;
-  
+  transition: width .2s linear;
 }
 
 .catalog-painters__link:hover::after {
   width: 100%;
 }
 
-.catalog-painters__link:active::after {
+.catalog-painters__link:active {
   color: var(--active-focus-color);
+  transition: color .2s linear;
+}
+
+.catalog-painters__link:active::after {
   background: var(--active-focus-color);
 }
 
-.catalog-painters__link.catalog-painters__link_active {
-  color: var(--hover-color);
-}
+
 
 .catalog-painters__link:focus-visible {
   outline: none;
-  /* background: var(--hover-color); */
   color: #fff;
 }
 

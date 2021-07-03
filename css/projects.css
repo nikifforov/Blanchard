@@ -27,11 +27,13 @@
   font-weight: 600;
   color: var(--hover-color);
   z-index: 1;
+  transition: color .2s linear;
 }
 
 .projects-discription__link:focus-visible {
   outline: none;
   color: #ffffff;
+  transition: background 2s linear;
 }
 
 .projects-discription__link:focus-visible::before {
@@ -43,6 +45,7 @@
   left: -6px;
   background-color: var(--hover-color);
   z-index: -1;
+  
 }
 
 .projects-discription__link::after {
@@ -52,8 +55,8 @@
   height: 1px;
   bottom: 0;
   left: 0;
-  background: var(--hover-color);
-  transition: .2s linear;
+  background-color: var(--hover-color);
+  transition: width .2s linear;
 }
 
 .projects-discription__link:hover::after {
@@ -62,6 +65,7 @@
 
 .projects-discription__link:active {
   color: var(--active-focus-color);
+  transition: background-color .2s linear;
 }
 
 .projects-discription__link:active::after {
@@ -96,10 +100,7 @@
   margin-right: 50px;
   outline: none;
   border: 1px solid #CACACA;;
-}
-
-.projects-slide {
-  transition: .2s linear;
+  transition: border .2s linear;
 }
 
 .projects-slide:hover {
@@ -111,6 +112,7 @@
 }
 .projects-slide__img {
   filter: grayscale(100%);
+  transition: filter .2s linear;
 }
 
 .projects-slide:hover .projects-slide__img {
@@ -127,6 +129,7 @@
 .projects-slider__cont .swiper-button-next {
   position: inherit;
   margin: 0px;
+  min-width: 30px;
   width: 30px;
   height: 30px;
   background: #ECECEC;
@@ -201,7 +204,7 @@
   content: '';
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 49%;
   width: 0;
   height: 0;
   border-left: 6px solid transparent;
@@ -218,6 +221,11 @@
 
   .projects-slide.swiper-slide {
     height: 128px;
+  }
+
+  
+  .ui-tooltip-content::before {
+    opacity: 0;
   }
 }
 

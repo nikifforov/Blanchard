@@ -65,7 +65,7 @@
   bottom: 0;
   left: 0;
   background: var(--hover-color);
-  transition: all .2s;
+  transition: width .2s;
 }
 
 .gallary-text__link:hover::before {
@@ -209,7 +209,7 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 5;
-  transition: all .2s;
+  transition: opacity .2s;
 }
 
 .image-slider__slide::before {
@@ -222,7 +222,7 @@
   height: 100%;
   background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
   z-index: 4;
-  transition: all .2s;
+  transition: opacity .2s;
 }
 
 .image-slider__slide:hover::after{
@@ -236,11 +236,13 @@
 .image-slider__slide:focus-visible {
   outline: 3px solid var(--active-focus-color);
   outline-offset: -3px;
+  transition: outline .2s linear;
 }
 
 .image-slider__slide:active {
   outline: 2px solid #D1A9F0;
   outline-offset: -2px;
+  transition: outline .2s linear;
 }
 
 .image-slider__image {

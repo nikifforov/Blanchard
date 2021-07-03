@@ -183,6 +183,7 @@ h3 {
 .first-header__link {
   position: relative;
   transition: color .2s;
+  outline: none;
 }
 
 
@@ -202,7 +203,9 @@ h3 {
   height: calc(100% + 4px);
   top: -2px;
   left: -6px;
-  background-color: var(--active-focus-color);
+  border: 2px solid var(--hover-color);
+  border-radius: 100px;
+  background-color: var(--hover-color);
   z-index: -1;
 }
 
@@ -385,7 +388,7 @@ input[type="search"]::placeholder {
   line-height: 25px;
   text-align: center;
   color: #FFFFFF;
-  transition: all .2s;
+  transition: border .3s linear;
 }
 
 .hero__btn:hover {

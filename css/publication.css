@@ -1,5 +1,5 @@
 .publication {
-  padding-top: 80px;
+  padding-top: 85px;
   padding-bottom: 72px;
   background-image: url(../img/publication/back.jpg);
   background-size: cover;
@@ -13,7 +13,7 @@
 
 .publication-title {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   font-size: 48px;
   font-weight: normal;
   color: #FFFFFF;
@@ -70,6 +70,7 @@
   color: white;
   font-size: 16px;
   line-height: 32px;
+  transition: color .2s linear;
 }
 
 .publication-categories__label::before,
@@ -84,6 +85,7 @@
   border: 1px solid #fff;
   top: 10px;
   left: 0px;
+  transition: border .2s linear;
 }
 
 .publication-categories__label::after {
@@ -142,9 +144,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   max-width: 277px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 6px;
@@ -168,6 +168,7 @@
   font-size: 16px;
   color: #FFFFFF;
   background-color: rgba(157, 92, 208, 0.5);
+  transition: background-color .2s linear ;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -193,7 +194,7 @@ input[type="number"]:active {
   background-color: var(--active-focus-color);
 }
 
-input[type="number"]:focus {
+input[type="number"]:focus-visible {
   background-color: var(--hover-color);
   border: 1px solid #FFFFFF;
 }
@@ -220,7 +221,7 @@ input[type="number"]::-moz-placeholder {
 .publication-slider {
   max-width: 1170px;
   margin: 0;
-  padding-top: 94px;
+  padding-top: 88px;
   padding-bottom: 5px;
   padding-left: 5px;
 } 
@@ -233,7 +234,7 @@ input[type="number"]::-moz-placeholder {
 .publication-slide__img {
   width: 100%;
   height: auto;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .publication-slide__discription {
@@ -278,6 +279,7 @@ input[type="number"]::-moz-placeholder {
   border: none;
   border: 2px solid #9D5CD0;
   border-radius: 100px;
+  transition: color .2s linear, background .2s linear, border .2s linear;
 }
 
 .publication-slide__btn:hover {
@@ -309,7 +311,7 @@ input[type="number"]::-moz-placeholder {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 32px;
+  top: 27px;
 }
 
 .publication-slider .swiper-button-prev::after,
@@ -438,7 +440,7 @@ input[type="number"]::-moz-placeholder {
   }
 
   .publication-wrapper {
-    margin-left: 27px;
+    margin-left: 22px;
   }
 
 }

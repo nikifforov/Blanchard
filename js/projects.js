@@ -7,17 +7,17 @@ new Swiper('.projects-slider',{
       slidesPerView: 1,
       // slidesPerGroup: 1,
     },
-    577: {
-      slidesPerView: 2,
+    576: {
+      slidesPerView: 1,
       spaceBetween: 34,
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
     },
-    769: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 50,
       slidesPerGroup: 2,
     },
-    1025: {
+    1024: {
       slidesPerView: 2,
       spaceBetween: 50,
       slidesPerGroup: 3,

@@ -82,13 +82,6 @@ document.querySelector('.burder').addEventListener('click', function(){
 
 const modal = new GraphModal();
 
-
-
-// document.querySelector('.publication-categories__title').addEventListener('click', function(){
-//   document.querySelector('.publication-categories__items').classList.toggle('categories__items_active')
-// })
-
-
 document.querySelector('.search-btn').addEventListener('click', function(){
   if (window.innerWidth <= 576) {
     document.querySelector('.first-header__form_mobile').classList.toggle('form-mobile__active')
@@ -105,98 +98,6 @@ document.querySelector('.search-btn__close').addEventListener('click', function(
   document.querySelector('.first-header__form_mobile').classList.remove('form-mobile__active')
   document.querySelector('.search-btn__close ').classList.remove('form-mobile__active')
 })
-
-
-// var x = document.querySelectorAll(".publication-categories__item");
-
-
-// x.addEventListener('click', function() {
-//   if (x.hasAttribute("data-checked", false)) {
-//     x.setAttribute("data-checked", true);
-//   } else {
-//     x.setAttribute("data-checked", false);
-//   }
-// })
-    
-
-// const x = document.querySelectorAll('.publication-categories__item');
-
-// x.forEach( element => {
-//   element.setAttribute("data-checked", false)
-// })
-
-// x.addEventListener('click', function() {
-//   if (x.hasAttribute("data-checked", false)) {
-//     x.setAttribute("data-checked", true);
-//   }
-// })
-
-
-// function pci () {
-//   const x = document.querySelectorAll('.publication-categories__item');
-
-//   for (let i = 0; i < x.attribute.length; i++) {
-//     if (x.hasAttribute("data-checked", false)) {
-//       x.setAttribute(("data-checked", true))
-//     } else (x.setAttribute("data-checked", false))
-//   }
-// }
-
-
-// const x = document.querySelector('.publication-categories__item');
-// const y = x.getAttribute('data-checked')
-
-// console.log(y)
-
-// for (i = 0; i < y; i++) {
-//   console.log(y)
-//   if (y === false) {
-//     x.setAttribute('data-checked', true)
-//   } else {
-//     x.setAttribute('data-checked', false)
-//   }
-// }
-
-// console.log(x.getAttribute('data-checked'))
-
-// const categoriesCheackBoxes = document.querySelector('.publication-categories__items');
-
-// function optimizeCheckbox() {
-//   if (document.documentElement.clientWidth <= 576 && !document.querySelector('.publication-categories__title')) {
-
-//     let button = document.createElement('button');
-//     button.classList.add('publication-categories__title');
-
-//     button.addEventListener('click', (ev) => {
-//       ev.target.classList.toggle('btn-show-categories-active');
-//       categoriesCheackBoxes.classList.toggle('.categories__items_active');
-//     });
-
-//     document.querySelector('.publication-categories__title').append(button);
-
-//     let inputs = document.querySelectorAll('.publication-categories__item');
-//     inputs.forEach((input) => {
-//       if (input.checked == true) {
-//         input.parentElement.classList.add('categories__items_active');
-//       }
-//     })
-
-//     let checkboxWrapper = document.querySelectorAll('.publication-categories__input');
-
-//     checkboxWrapper.forEach((wrapper) => {
-//       wrapper.addEventListener('click', function (ev) {
-//         if (this.children[0].checked == true) {
-//           this.classList.add('categories__items_active');
-//         } else {
-//           this.classList.remove('categories__items_active');
-//         }
-//       })
-//     })
-//   } else if (document.querySelector('.btn-show-categories')) {
-//     document.querySelector('.btn-show-categories').remove();
-//   };
-// };
-// optimizeCheckbox();
 
 const publicationBtn = document.querySelector('.publication-categories__title');
 const publicationFormItem = document.querySelectorAll('.publication-categories__item');
