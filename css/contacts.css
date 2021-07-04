@@ -5,9 +5,9 @@
 }
 
 .contacts-title {
-  padding-left: 160px;
+  padding-left: 150px;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   font-weight: normal;
   font-size: 48px;
   line-height: 65px;
@@ -16,10 +16,10 @@
 
 .contacts-main {
   max-width: 683px;
-  padding-top: 121px;
+  padding-top: 123px;
   padding-right: 122px;
-  padding-left: 160px;
-  padding-bottom: 122px;
+  padding-left: 149px;
+  padding-bottom: 121px;
   border: 1px solid #CACACA;
   border-bottom: none;
 }
@@ -33,7 +33,7 @@
 
 .contacts-main__address {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
   font-style: normal;
   font-size: 16px;
 }

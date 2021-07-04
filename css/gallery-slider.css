@@ -205,7 +205,7 @@
   width: calc(100% - 50px);
   height: calc(100% - 50px);
   margin: 25px;
-  background-image: url(/img/gallary/plus.png);
+  background-image: url(../img/gallary/plus.png);
   background-position: center;
   background-repeat: no-repeat;
   z-index: 5;
