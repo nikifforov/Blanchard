@@ -97,7 +97,6 @@
   justify-content: center;
   max-width: 450px;
   height: 150px;
-  margin-right: 50px;
   outline: none;
   border: 1px solid #CACACA;;
   transition: border .2s linear;
@@ -214,7 +213,15 @@
 }
 
 
+@media (max-width: 1366px) {
+  .projects-slider {
+    max-width: 950px;
+  }
+}
+
 @media (max-width: 1024px) {
+
+
   .projects-slider {
     max-width: 818px;
   }
@@ -259,6 +266,14 @@
   .projects-slider {
     max-width: 450px;
   }
+
+  .projects-btn-prev.swiper-button-prev {
+    margin-right: 18px;
+  }
+
+  .projects-btn-next.swiper-button-next {
+    margin-left: 18px;
+  } 
 }
 
 @media (max-width: 320px) {

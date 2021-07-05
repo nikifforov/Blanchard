@@ -8,21 +8,21 @@ new Swiper('.projects-slider',{
       // slidesPerGroup: 1,
     },
     576: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 34,
       slidesPerGroup: 1,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 50,
+      spaceBetween: 34,
       slidesPerGroup: 2,
     },
     1024: {
       slidesPerView: 2,
       spaceBetween: 50,
-      slidesPerGroup: 3,
+      slidesPerGroup: 2,
     },
-    1366: {
+    1367: {
       slidesPerView: 3,
       spaceBetween: 50,
     },

@@ -50,7 +50,6 @@
 .gallary-text__link {
   position: relative;
   color: #C283F3;
-  transition: all .2s;
   outline: none;
   z-index: 1;
 }
@@ -65,16 +64,19 @@
   bottom: 0;
   left: 0;
   background: var(--hover-color);
-  transition: width .2s;
+  transition: width .2s linear;
 }
 
 .gallary-text__link:hover::before {
   width: 100%;
 }
 
-.gallary-text__link:active {
+.gallary-text__link:active{
   color: var(--active-focus-color);
-  border-bottom: 1px solid var(--active-focus-color);
+}
+
+.gallary-text__link:active.gallary-text__link::before {
+  background: var(--active-focus-color);
 }
 
 
@@ -116,7 +118,7 @@
   box-sizing: border-box;
   border-radius: 6px;
   background-color: rgba(0, 0, 0, 0.1);
-  transition: all .2s;
+  transition: background .2s linear;
 }
 
 .choices__inner:hover {
@@ -209,7 +211,7 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 5;
-  transition: opacity .2s;
+  transition: opacity .2s linear;
 }
 
 .image-slider__slide::before {
@@ -222,7 +224,7 @@
   height: 100%;
   background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
   z-index: 4;
-  transition: opacity .2s;
+  transition: opacity .2s linear;
 }
 
 .image-slider__slide:hover::after{
@@ -270,7 +272,7 @@
   height: 31px;
   background: #666666;
   border-radius: 50px;
-  transition: all .2s;
+  transition: background .2s linear, border .2s linear;
 }
 
 .image-btn-prev.swiper-button-prev:hover,

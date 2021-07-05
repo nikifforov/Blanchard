@@ -2,17 +2,17 @@ new Swiper('.publication-slider',{
   slidesPerView: 3,
   spaceBetween: 50,
   breakpoints: {
-    1367: {
+    1366: {
       slidesPerView: 3,
       spaceBetween: 50,
     },
-    1025: {
+    1024: {
       slidesPerView: 2,
       spaceBetween: 50,
     },
-    769: {
+    768: {
       slidesPerView: 2,
-      spaceBetween: 50,
+      spaceBetween: 34,
     },
     321: {
       slidesPerView: 2,
