@@ -99,38 +99,33 @@ document.querySelector('.search-btn__close').addEventListener('click', function(
   document.querySelector('.search-btn__close ').classList.remove('form-mobile__active')
 })
 
-const publicationBtn = document.querySelector('.publication-categories__title');
-const publicationFormItem = document.querySelectorAll('.publication-categories__item');
-const publicationFormInput = document.querySelectorAll('.publication-categories__input');
-const publicationBtnArrow = document.querySelector('.publication-categories__title-arrow');
-
-const showActiveCheckbox = () => {
-  publicationFormInput.forEach(el => {
-    if (el.checked) {
-      el.parentNode.classList.add('categories__items_active')
+const categoriesSpoiler = () => {
+  document.querySelectorAll('.publication-categories__input').forEach((check) => {
+    if (check.checked) {
+      check.parentElement.classList.add('categories__items_active');
     }
-  })
-}
+  });
 
-const publicationAccordion = () => {
-  publicationBtn.addEventListener('click', () => {
-    publicationBtnArrow.classList.toggle('arrow-active');
-    publicationFormItem.forEach(el => {
-      el.classList.toggle('categories__items_active')
-      showActiveCheckbox();
-    })
-  })
-}
+  document.querySelector('.publication-categories__title').addEventListener('click', () => {
 
-const publicationCheck = () => {
-  for (let i = 0; i < publicationFormInput.length; i++) {
-    const el = publicationFormInput[i];
-    el.addEventListener('change', () => {
-      el.parentNode.classList.toggle('categories__items_active');
-      showActiveCheckbox();
-    })
-  }
-  showActiveCheckbox();
-}
-publicationAccordion();
-publicationCheck();
+    document.querySelectorAll('.publication-categories__item').forEach((category) => {
+
+      category.classList.toggle('categories__items_show');
+
+      if (category.childNodes[1].checked) {
+        category.classList.add('categories__items_active');
+      };
+
+      if (!category.childNodes[1].checked) {
+        category.classList.remove('categories__items_active');
+      };
+    });
+  });
+
+  document.querySelectorAll('.publication-categories__item-icon').forEach((btn) => {
+    btn.addEventListener('click', (ev) => {
+      ev.currentTarget.previousElementSibling.previousElementSibling.checked = ''
+    });
+  });
+};
+categoriesSpoiler();

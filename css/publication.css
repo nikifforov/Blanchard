@@ -141,11 +141,9 @@
 }
 
 .publication-price__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
-  max-width: 277px;
+  width: 277px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 6px;
 }
@@ -483,6 +481,11 @@ input[type="number"]::-moz-placeholder {
   /* .publication-categories__label {
     width: 100%;
   } */
+
+  .categories__items_show {
+    display: flex;
+    justify-content: space-between;
+  }
   
   .categories__items_active {
     display: flex;

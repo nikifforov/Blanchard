@@ -242,6 +242,9 @@
   .ui-tooltip-content::before {
     opacity: 0;
   }
+  .projects-slide__img {
+    width: 76%;
+  }
 }
 
 
