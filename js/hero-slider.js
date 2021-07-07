@@ -1,7 +1,7 @@
 new Swiper('.hero-slider',{
   effect: "fade",
   autoplay: {
-    delay: 5000,
+    delay: 2000,
   },
   loop: true,
 });

@@ -22,6 +22,7 @@
   padding-right: 122px;
   padding-left: 15px;
   padding-bottom: 121px;
+  z-index: 1;
 }
 
 .contacts-main::after {
@@ -33,6 +34,7 @@
   top: 0;
   right: 0;
   border: 1px solid #CACACA;
+  z-index: -1;
 }
 
 .contacts-main__title {
