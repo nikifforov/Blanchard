@@ -33,9 +33,8 @@
 .contacts-main::after {
   content: '';
   position: absolute;
-  width: calc(100% + ((100vw - 1617px)/2));
+  width: 672px;
   height: 100%;
-  min-width: 100%;
   top: 0;
   right: 0;
   border: 1px solid #CACACA;
