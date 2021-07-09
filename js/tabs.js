@@ -24,9 +24,7 @@
       document.querySelector(`[data-link="${path}"]`).classList.add('catalog-painters__link_active')
     })
   })
-})
 
-document.addEventListener('DOMContentLoaded', () => {
   let catalogLink = document.querySelectorAll('.catalog-painters__link');
   catalogLink.forEach(function(btn) {
     btn.addEventListener('click', () => {

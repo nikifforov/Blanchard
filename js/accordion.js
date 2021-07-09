@@ -41,13 +41,3 @@ $(document).ready(function() {
 	});
 });
 
-
-$(window).resize(function() {
-  if ( $(window).width() <= 768 ) {
-    $('.catalog-painters__link').click(function() {
-      var num = $(this).attr('data-num');
-      $('#block'+num).addClass('catalog-painters-active')
-      location.hash = '#block'+num
-    });
-  }
-});
