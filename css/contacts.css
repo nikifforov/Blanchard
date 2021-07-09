@@ -1,11 +1,11 @@
 .contacts-container {
   display: flex;
-  padding-left: calc((100vw - 1603px)/2 - 35px);
+  padding-left: calc((100vw - 1603px)/2 - 24px);
   padding-right: 0;
 }
 
 .contacts-title {
-  padding-left: calc((100vw - 1603px)/2 - 20px);
+  padding-left: calc((100vw - 1603px)/2 - 9px);
   margin: 0;
   margin-bottom: 15px;
   font-weight: normal;
