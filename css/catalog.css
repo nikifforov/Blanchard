@@ -154,6 +154,7 @@
 .catalog-painters {
   max-width: 750px;
   margin-right: 50px;
+  scroll-margin-top: 15px;
 }
 
 .catalog-painters__img {
